@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Residuals</title>
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Posts</title>
+      <link>/post/</link>
+    </image>
+    
+    <item>
+      <title>Big picture behind P-values</title>
+      <link>/post/pvalues-big-picture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/pvalues-big-picture/</guid>
+      <description>
+
+
+&lt;p&gt;About a year ago, ASA (American Statistical Association) published a series of articles urging journals and research investigators to ban the use of pvalues in their findings. You might be thinking, what is wrong with p-values? The answer is: there is nothing inherently wrong with pvalues. Its the way they are interpreted.&lt;/p&gt;
+&lt;p&gt;This post shows you overall picture behind p-value. Lets assume you are conducting an experiment (it could be testing the difference in efficacy between 2 drugs in medicine which we call clinical trial or testing difference between two product strategies in business settings commonly known as A/B testing.) Lets say after the experiment is over, you calculated pvalue of 0.02. What does this 0.02 pvalue telling us?&lt;/p&gt;
+&lt;p&gt;We conduct an experiment with the assumption that there is no difference in between groups we are testing which is called null hypothesis. The idea is to see how far off we are from our null hypothesis (i.e the assumption of equivalent group) after we finished the experiment. P-value is built on this idea of assumption that there is no difference between groups. In our case pvalue is 0.02 which says that, provided this assumption of no difference between groups, if we repeateadly conduct 1000 similar experiments, only 20 such experiments would give us results as or more surprising than our current result. This tells you that since very few number of repeated experiments would give us the results as or more surprising than our current data, we have some degree of evidence against our assumption of equivalent groups. However, this doesn’t mean alternative is 100% true.&lt;/p&gt;
+&lt;p&gt;Above p-value of 0.02 might seem impressive for any experiment,and people tend to conclude there is a “statistically significant difference” between 2 groups and use it as the ultimate truth. So, the point is rather than accepting p-value as the ultimate truth, we need to look at other measures of uncertainty surrounding it. As an investigator one needs to look at the magnitude of difference between 2 groups and confidence intervel associated with it and see if it is meaningful enough. Uncertainty expressed as the difference between groups (which we call “effect size”) and confidence interval help explore research findings in a deeper level. Blindly trusting results based on p-value cutoff won’t lead to good research.&lt;/p&gt;
+&lt;p&gt;(I have explained confidence intervel in this post)[&lt;a href=&#34;https://residuals.netlify.com/concepts/confidence-interval/&#34; class=&#34;uri&#34;&gt;https://residuals.netlify.com/concepts/confidence-interval/&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;I will talk more about misconceptions of pvalues and how we can calculate p-values by hand in later posts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Central Limit Theorem</title>
+      <link>/post/central-limit-theorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/central-limit-theorem/</guid>
+      <description>
+
+
+&lt;div id=&#34;what-is-central-limit-theorem&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;What is Central Limit Theorem?&lt;/h2&gt;
+&lt;p&gt;Textbook definition of Central Limit Theorem states that “As sample size increases, &lt;a href=&#34;https://statsisfun.netlify.com/concepts/sampling-dist-sample-mean/&#34;&gt;the sampling distribution of the mean&lt;/a&gt; for an independent identically distributed variable will approximately resemble that of normal distribution regardless of its distribution”.&lt;/p&gt;
+&lt;p&gt;This definition of CLT needs some breakdown into simpler parts. First of all, a random variable can have different probability distribution. It could be right, left skewed or uniformly distributed etc.. However, if that variable has sufficient enough sample size, its distribution approximates normal distribution irrespective of the probability distribution. We will explore this key idea using a series of simulation examples.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#set libraries
+library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Attaching packages --------------------------------------------------------- tidyverse 1.2.1 --&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## v ggplot2 3.1.0       v purrr   0.3.1  
+## v tibble  2.0.1       v dplyr   0.8.0.1
+## v tidyr   0.8.3       v stringr 1.4.0  
+## v readr   1.3.1       v forcats 0.4.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Conflicts ------------------------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+library(dplyr)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Let&amp;#39;s look at a right skewed (negative binomial distribution)
+set.seed(1536)
+#this gives us a set of random numbers that follow negative binomial distribution with a sample size of 100
+neg_binom&amp;lt;-rnbinom(100,30,0.3)
+neg_binom1&amp;lt;-as.data.frame(neg_binom)
+
+#plot histogram and density curve
+hist&amp;lt;- ggplot(neg_binom1, aes(x=neg_binom)) + 
+  geom_histogram(aes(y=..density..),bins=20) + geom_density() + 
+  labs(x=&amp;quot;X&amp;quot;,y=&amp;quot;Density&amp;quot;) + ggtitle(&amp;quot;Right Skewed negative binomial distribution&amp;quot;)
+hist&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/central-limit-theorem_files/figure-html/central-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If we increase sample size sufficiently enough, we will see the distibution of the variable X resembles to that of normal distribution. This means we will acheive a symmetrical distribution of this right skewed variable if we have larger enough sample size. Lets see if we can show this in an example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Let&amp;#39;s take the same negative binomial distribution with large sample size 
+
+set.seed(1546)
+#this gives us a set of random numbers that follow negative binomial distribution with a sample size of 10000
+neg_binom&amp;lt;-rnbinom(10000,30,0.3)
+neg_binom1&amp;lt;-as.data.frame(neg_binom)
+
+#plot histogram and density curve
+hist&amp;lt;- ggplot(neg_binom1, aes(x=neg_binom)) + 
+  geom_histogram(aes(y=..density..),bins=20) + geom_density() + 
+  labs(x=&amp;quot;X&amp;quot;,y=&amp;quot;Density&amp;quot;) + ggtitle(&amp;quot;Normal Distribution obtained using larger sample size&amp;quot;)
+hist&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/central-limit-theorem_files/figure-html/central1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Here, once we sufficiently increase the number of samples, the right skewed binomial distribution with same parameters resembles normal distribution. As we can clearly see from the figure that concentration of the values generated is around the center which is mean of the distribution approximating normal distribution.&lt;/p&gt;
+&lt;p&gt;You can take any skewed family of distribution and repeat above procedures of simulation with larger sample size and you will get the distribution that approximates normal distribution. This concept of central limit theorem has broader implications in the field of statistical inferences. I will expand on this in more details in future posts.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Confidence Interval</title>
+      <link>/post/confidence-interval/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/confidence-interval/</guid>
+      <description>
+
+
+&lt;div id=&#34;how-do-you-explain-confidence-intervals-intuitively&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;How do you explain confidence intervals intuitively?&lt;/h2&gt;
+&lt;p&gt;In any study,We all know we want to test our hypothesis to see if there is any difference between our assigned groups using some kind of experiment. As a common rule, point estimate is calculated as the difference in means between two groups and 95 % confidence interval is reported as a means of quantifying uncertainty associated with that estimate.&lt;/p&gt;
+&lt;p&gt;When people hear about 95% confidence interval, they mistakenly interpret it as the interval with 95% chance of containing true population parameter we are trying to estimate. This is entirely a wrong way to think about confidence interval. Let me make this clear with a simulation example.&lt;/p&gt;
+&lt;p&gt;Textbook definition of 95% confidence interval tells us that if we repeatedly conduct experiments of sample size n and calculate confidence interval in each case, 95 % of those intervals would contain the population parameter we are trying to estimate.&lt;/p&gt;
+&lt;p&gt;Assume an experiment where we want to find out the effect of a treatment (Active vs Control) on our outcome. Lets assume for our outcome simulation We have following population parameters. It means we know true population effect here since we created this for simulation. It is always unknown in real world.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;true population effect delta= 200 (true difference in mean outcome between Active and control group)&lt;/li&gt;
+&lt;li&gt;standard deviation = 100&lt;/li&gt;
+&lt;li&gt;Sample size = 200&lt;/li&gt;
+&lt;li&gt;Number of trials repeated with this sample size = 100&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(148)
+n &amp;lt;- 200
+sigma&amp;lt;-100
+delta&amp;lt;-200
+# Store means, upper and lower intervals from 100 trials
+means&amp;lt;-c()
+upper&amp;lt;-c()
+lower&amp;lt;-c()
+
+for (i in 1:100) {
+  #Simulate a normal distribution using above parameters
+  x&amp;lt;-rnorm(n,delta,sigma)
+  means[i]&amp;lt;-mean(x)
+  lower[i]&amp;lt;-means[i]-1.96*sigma/sqrt(n)
+  upper[i]&amp;lt;- means[i]+1.96*sigma/sqrt(n)
+  
+}
+
+# change to dataframe
+means_frame&amp;lt;- as.data.frame(means)
+id&amp;lt;-rownames(means_frame)
+id&amp;lt;-as.numeric(id)
+means_list&amp;lt;-cbind(means_frame,id)
+
+upp_lower&amp;lt;-as.data.frame(cbind(lower,upper))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#plot 95% confidence interval for each estimate
+ true_value&amp;lt;-ifelse (lower &amp;gt;= 200 &amp;amp; upper &amp;gt;= 200 ,1,0) 
+true&amp;lt;-as.data.frame(true_value)
+
+#Combine everything into one dataset
+
+all&amp;lt;-cbind(upp_lower,true, means_list)
+
+g&amp;lt;-ggplot(all,aes(id,means,color=factor(true_value,labels=c(&amp;quot;Includes true effect&amp;quot;,&amp;quot;Excludes true effect&amp;quot;)))) +
+  geom_errorbar(aes(ymin=lower,ymax=upper)) +
+  geom_line() +
+  geom_point() +
+  scale_x_continuous(limits=c(0,100)) +
+  labs(x=&amp;quot;Number of Trials&amp;quot;,y=&amp;quot;Confidence limit&amp;quot;,color=&amp;quot;Confidence&amp;quot;) +
+  geom_hline(yintercept=200,color=&amp;quot;black&amp;quot;,linetype=&amp;quot;dashed&amp;quot;,size=0.5)
+
+g&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/confidence-interval_files/figure-html/plots-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Here, as stated in the definition of 95% confidence interval we calculated confidence intervals for 100 trials with same sample size. As expected we clearly see from above figure (indicated by green dots and error bars), 5 trials out of 100 didn’t have confidence limit that contain true population effect of 200. Remaining 95 intervals contain true population effect.&lt;/p&gt;
+&lt;p&gt;It is important to notice that we will never know true population effect in practice. Some intervals will contain true value whereas some won’t. We cannot tell which contain the true effect. However, provided that we know nothing about true effect, we can assign a probability for the confidence interval being included in our analysis. Looking at the figure above we can say 95 out of 100 i.e. 95% of the intervals cover true value.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sampling Distribution of the Sample Mean Clearly Explained</title>
+      <link>/post/sampling-dist-sample-mean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/sampling-dist-sample-mean/</guid>
+      <description>
+
+
+&lt;div id=&#34;what-is-sampling-distribution-of-the-sample-mean&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;What is Sampling Distribution of the Sample Mean?&lt;/h2&gt;
+&lt;p&gt;We use sample mean as one of the measures of summary of variables in a study. In other words, sample mean is the average of the values observed. Lets imagine you conduct the same study with same sample size again and again and calculate sample mean in each case. Frequency distribution of sample means obtained from those repeated studies is called sampling distribution of the mean. It can be displayed using histogram or density curve.&lt;/p&gt;
+&lt;p&gt;For example, you run a study of sample size 12000 and replicate it 1000 times. Assume our data is normally distributed for simulation purposes. We will calculate 1000 sample means and show the distribution of those means using histogram overlayed with density curve as described below.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#set libraries
+library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Attaching packages --------------------------------------------------------- tidyverse 1.2.1 --&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## v ggplot2 3.1.0       v purrr   0.3.1  
+## v tibble  2.0.1       v dplyr   0.8.0.1
+## v tidyr   0.8.3       v stringr 1.4.0  
+## v readr   1.3.1       v forcats 0.4.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## -- Conflicts ------------------------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+library(dplyr)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#replicate a study of sample size 12000  1000 times and calculate sample mean of each of those studies
+set.seed(1431)
+sample_avg = rep(NA, 1000) #replicate NA 1000 times
+for (i in 1:1000){
+  sample_avg[i]= mean(rnorm(12000))
+}
+#sample_avg&amp;lt;- as.integer(sample_avg)
+#change the distribution of sample mean to data frame
+sample&amp;lt;-as.data.frame(sample_avg)
+
+#create histogram of sampling distribution of the sample mean overlayed with density curve
+hist&amp;lt;- ggplot(sample, aes(x=sample_avg)) + 
+  geom_histogram(aes(y=..density..)) + geom_density() + 
+  labs(x=&amp;quot;Sample Average&amp;quot;,y=&amp;quot;Density&amp;quot;) + ggtitle(&amp;quot;Histogram showing sampling distribution of the sample mean&amp;quot;)
+hist&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/sampling-dist-sample-mean_files/figure-html/simulation-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This idea of sampling distribution is the fundamental concept based on which statistical inferences are made in frequentist Statistics. We will look at it more closely how it applies to one of the most important ideas in statistics called ‘Central Limit Theorem’ in another post.&lt;/p&gt;
+&lt;p&gt;One thing that comes to mind after going through this explanation is that its not easy to repeat studies to estimate sampling distribution of sample mean in practice. We will have to use statistical techniques that would be able to estimate sampling distribution of the mean from a single random sample. We will discuss more about this in later posts in details.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book Notes | Learn and Grow</title>
+    <link>/books/</link>
+      <atom:link href="/books/index.xml" rel="self" type="application/rss+xml" />
+    <description>Book Notes</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Book Notes</title>
+      <link>/books/</link>
+    </image>
+    
+    <item>
+      <title>Complexity: A guided Tour</title>
+      <link>/books/complexity-a-guided-tour/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/books/complexity-a-guided-tour/</guid>
+      <description>
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Following is a collection of notes from Melanie Mitchell’s book “Complexity: A Guided Tour”&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;book-details&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Book Details:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Author: Melanie Mitchell&lt;/li&gt;
+&lt;li&gt;Link: &lt;a href=&#34;https://www.amazon.com/Complexity-Guided-Tour-Melanie-Mitchell/dp/0199798109&#34; class=&#34;uri&#34;&gt;https://www.amazon.com/Complexity-Guided-Tour-Melanie-Mitchell/dp/0199798109&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ISBN-13: 978-0199798100&lt;/li&gt;
+&lt;li&gt;ISBN-10: 0199798109&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;part-one-background-and-history&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Part One: Background and History&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapters-1-6-what-is-complexitydynamicschaos-and-prediction-information-computation-evolution-and-genetics-simplified-defining-and-measuring-complexity&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chapters 1-6: What is complexity,Dynamics,Chaos and Prediction, Information, Computation, Evolution and Genetics Simplified, Defining and Measuring Complexity&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nigel Franks, a biologist specializing on ant behaviors says “The solitary army ant is behaviorally one of the least sophisticated animals imaginable”.&lt;/li&gt;
+&lt;li&gt;If you place 100 army ants on a flat surface, they will walk around and around in never decreasing circle until they die of exhaustion.But if you put half a million of them together, and the group as a whole becomes what some have called “superorganisms” with “collective intelligence”.&lt;/li&gt;
+&lt;li&gt;Scientists fully don’t understand the mechanism behind ant colony’s collective intelligence.&lt;/li&gt;
+&lt;li&gt;Questions like the mechanism underlying ant colony’s collective intelligence are the topics of complex systems.&lt;/li&gt;
+&lt;li&gt;Complex systems is an interdisciplinary field of research that seeks to explain how large numbers of relatively simple entities organize themselves, without the benefit of any central controller, into a collective whole that creates patterns, uses information, and in some cases, evolves and learn.&lt;/li&gt;
+&lt;li&gt;Eg: In neurons, we have dendrites that transmits cell’s input from other neurons, cell’s output is transmitted via single trunk called axon.&lt;/li&gt;
+&lt;li&gt;A neuron can either be in firing (active) or not firing (inactive) state. Firing consists of sending an electric pulse through the axon which is then converted into chemical signals via chemicals called neurotransmitters which in turn activates other neurons through their dendrites.&lt;/li&gt;
+&lt;li&gt;Firing frequency and resulting chemical output signals of a neuron can vary over time because of its input and how it has been firing recently.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;These characters resemble to that of ant colony: Individuals (neurons or ants) perceive signals from other individuals, and a, sufficient summed strength of these signals causes the individuals act in certain ways that produces additional signals. The overall effects can be very complex.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Immune System, economies and World wide Web are some additional examples of complex systems.&lt;/li&gt;
+&lt;li&gt;Common properties of complex systems:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Complex collective Behavior&lt;/strong&gt;: The complex systems like ant colony,neurons, stockbuyers,World Wide Web typically follow relatively simple rules with no central control or leader. It is the collective action of vast number of components that give rise to the complex,hard to predict and chaning patterns of behaviors that fascinate us.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Signaling and information processing&lt;/strong&gt;: All these systems produce and use information and signals from both their internal and external environments.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Adaptation&lt;/strong&gt;: All these systems adapt- that is, change their behavior to improve their chances of survival or success- through learning or evolutionary process.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Complex system is a system that exhibits nontrivial emergent and self organizing behaviors.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How can complexity be Measured?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamics,Chaos,and Prediction&lt;/strong&gt;:&lt;/li&gt;
+&lt;li&gt;Dynamical Systems Theory concerns the description and prediction of systems that exhibit complex changing behavior at the macroscopic level, emerging from collective actions of many interacting components.&lt;/li&gt;
+&lt;li&gt;eg: solar system, heart, brain, stock market, world’s population, global climate are some examples of dynamical systems.&lt;/li&gt;
+&lt;li&gt;Galileo revolutionized the ideas about motion; rest is not the natural state of the objects, it takes force to stop a moving object.&lt;/li&gt;
+&lt;li&gt;Newton invented science of dynamics; general study of motion is called mechanics&lt;/li&gt;
+&lt;li&gt;Newton’s three laws of motion are constant speed, inertial mass and equal and opposite force.&lt;/li&gt;
+&lt;li&gt;Heisenberg uncertainty principle (1927)&lt;/li&gt;
+&lt;li&gt;chaotic systems: sensitive dependence on intial conditions&lt;/li&gt;
+&lt;li&gt;Henry poincare (French Mathematician) discovered chaotic systems while tackling three body problem and he discovered &lt;em&gt;algebraic topology&lt;/em&gt; to solve the problem&lt;/li&gt;
+&lt;li&gt;linearity vs. Non-linearity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;logistic model&lt;/strong&gt;:non-linear equation because of its inclusion of death by overcrowding&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The logistic map&lt;/strong&gt;: Equation &lt;span class=&#34;math inline&#34;&gt;\(x_{t+1}=Rx_{t}(1-x_{t})\)&lt;/span&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Attracter&lt;/strong&gt;: Regular final behavior of logistic map (either fixed point or oscillation).&lt;/li&gt;
+&lt;li&gt;Three different classes of final behavior(attractors): Fixed point, periodic and chaotic.&lt;/li&gt;
+&lt;li&gt;Apparent randomness can arise from very simple deterministic systems.&lt;/li&gt;
+&lt;li&gt;Universal features that are common to chaotic systems:&lt;/li&gt;
+&lt;li&gt;The period doubling route to chaos
+&lt;ul&gt;
+&lt;li&gt;Abrupt period doublings are called bifurcation and the succession of the bifurcations culminating in chaos has been called the “period doubling route to chaos”&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Feigenbaum’s Constant: Feigenbaum measured the rate at which bifurcations get closer and closer; rate at which R values converge. (the rate is a constant value 4.6692016)&lt;/li&gt;
+&lt;li&gt;Seemingly random behavior can emerge from deterministic systems, with no external source of randomness&lt;/li&gt;
+&lt;li&gt;The behavior of some simple, deterministic systems can be impossible, even in principle, to predict in the long term, due to sensitive dependence on initial conditions&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Although the detailed behavior of a chaotic system cannot be predicted, there is some “order in chaos” seen in universal properties common to large sets of chaotic systems, such as the period doubling route to chaos and Feigenbaum’s constant. Thus even though “prediction becomes impossible” at the detailed level, there are some higher-level aspects of chaotic systems that are indeed predictable.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;information&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A complete account of how entropy defying self-organization takes place is the holy grail of complex systems science.&lt;/li&gt;
+&lt;li&gt;Complex systems resemble one another in the way they handle information.&lt;/li&gt;
+&lt;li&gt;information and computation&lt;/li&gt;
+&lt;li&gt;entropy is the measure of energy that cannot be converted to additional work.&lt;/li&gt;
+&lt;li&gt;laws of thermodynamics: 1) Energy is conserved 2) Entropy always increases until it reaches a maximum value.&lt;/li&gt;
+&lt;li&gt;Someone or something has to do work to turn disorder into order.&lt;/li&gt;
+&lt;li&gt;Second law of thermodynamics is the only fundamental law of physics that distinguishes between past and future.&lt;/li&gt;
+&lt;li&gt;Maxwell’s Demon: According to Maxwell second law (the increase of entropy over time) is not really a law at all, but rather a statistical effect that holds for large collections of molecules, like ths objects we encounter in day-to-day life, but does not necessarily hold at the scale of individual molecules.&lt;/li&gt;
+&lt;li&gt;Szilard first made a link between entropy and information; his paper “On the decrease of entropy in a thermodynamics system by the intervention of intelligent beings”&lt;/li&gt;
+&lt;li&gt;Entire systemc comprising the box, the molecules and the demon obeys the second law of thermodynamics&lt;/li&gt;
+&lt;li&gt;observer plays a key role in quantum mechanics&lt;/li&gt;
+&lt;li&gt;reversible computing: any computation can be done without expending energy.&lt;/li&gt;
+&lt;li&gt;it is not the act of measurement but rather the act of eraing memory that necessarily increases entropy&lt;/li&gt;
+&lt;li&gt;Bennet showed that for the demon to work, its memory must be erased at some point, and when it is , the physicla act of erasure will produce heat, thus increasing entropy by an amount exactly equal to the amount entropy was decreased by the demon’s sorting actions.&lt;/li&gt;
+&lt;li&gt;Resolutions to the demon paradox became the foundations of two new fields: information theory and the physics of information&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;statistical mechanics&lt;/strong&gt;:it proposes large scale properties (eg. heat) emerge from microscopic properties (i.e. motions of trillions of molecules).&lt;/li&gt;
+&lt;li&gt;A statistical mechanics approach gives up on determining the exact position, velocity and future behavior of each molecule in the room and instead tries to predict the average positions and velocities of large ensembles of molecules.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Microstates and Macrostates&lt;/strong&gt;: Boltzman entropy obeys the second law of thermodynamics. Unless work is done, Boltzman’s entropy will always increase until it gets to a macrostate with highest possible entropy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Shannon Information&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Maximum transformission rate of information over a given channel (wire or other medium), even if there are errors in transmission caused by noise on the channel. This maximum transmission rate is called &lt;em&gt;channel capacity&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Shannon entropy&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Computation&lt;/strong&gt;: The notion of computation has come long ways since the early days of computers. Many phenomenon in nature are viewed as computation now.&lt;/li&gt;
+&lt;li&gt;Information concerns the predictability of a message, and information is processed via imputation&lt;/li&gt;
+&lt;li&gt;Before 1940s, those who could do faster math calculation by hand used to be called computer.&lt;/li&gt;
+&lt;li&gt;Electonics computers do computation now; natural complex systems also do compuation.&lt;/li&gt;
+&lt;li&gt;Does computers have any limits? How much can be accomplished through computation?&lt;/li&gt;
+&lt;li&gt;Set of abstract math problems posed by German Mathematician David Hilbert in the year 1900 at the international congress of mathematicians in Paris sparked deeper study of foundations and limitations of computation which led to the discovery of electronic computers.&lt;/li&gt;
+&lt;li&gt;Is mathematics complete?: Can every mathematical statement be proved or disproved from a given finite set of axioms?&lt;/li&gt;
+&lt;li&gt;Is mathematics consistent?: Can only the true statements be proved.&lt;/li&gt;
+&lt;li&gt;Is every statment in mathematics decidable?: Is there a finite procedure that can be applied to every statement that will tell us in finite time whether or not the statement is true/false?&lt;/li&gt;
+&lt;li&gt;Godel’s incompleteness theorem: If arithmetic is consistent, then there are true statement in arithmetic that cannot be proved, that is, arithmetic is incomplete.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Turing machines and incomputability&lt;/strong&gt;:&lt;/li&gt;
+&lt;li&gt;Definite procedures defined as turing machines: Turing machines were put forth as the definition of “definite procedure”&lt;/li&gt;
+&lt;li&gt;Universal Turing Machines&lt;/li&gt;
+&lt;li&gt;The very same string of 0s and 1s on a tape could be interpreted as either a program or as input to another program was truly novel.&lt;/li&gt;
+&lt;li&gt;There can be no definite procedure for solving the halting problem&lt;/li&gt;
+&lt;li&gt;Universal turing machines laid the groundwork for the invention of electronic programmable computers during 1930s.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Evolution&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;To decrease entropy, work must be done. Who or what is doing the work of creating and maintaining living systems and making them more complex?&lt;/li&gt;
+&lt;li&gt;Pre-darwinian notions of Evolution: inheritance of acquired characteristics&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notion of invisible hand in economics&lt;/strong&gt;: A collection of individuals acting in their own self interest produces maximum benefit for the entire community.&lt;/li&gt;
+&lt;li&gt;Evolution by natural selection&lt;/li&gt;
+&lt;li&gt;Mendel and Mechanism of Heredity: Medium of inheritance of characteristics were the discrete factors contributed by both parents&lt;/li&gt;
+&lt;li&gt;Drift is a stronger force in small rather than large populations, because in large populations, the small fluctuations that eventually result in drift tend to cancel one another out.&lt;/li&gt;
+&lt;li&gt;Wright believed that random genetic drift played a significant role in evolutionary change and origin of new species, whereas in Fisher’s view, drift played only an insignificant role at best.&lt;/li&gt;
+&lt;li&gt;Historical contingency: All the random accidents large and small that have contributed to the shaping of an oragnism&lt;/li&gt;
+&lt;li&gt;The transcription and translation of a gene is called the gene’s expression and a gene is being expressed at a given time if it is being transcribed and translated&lt;/li&gt;
+&lt;li&gt;Physicist Seth Lloyd in 2001 proposed three different dimensions to measure the complexity of an object or process&lt;/li&gt;
+&lt;li&gt;how hard is it to describe?&lt;/li&gt;
+&lt;li&gt;How hard is it to create?&lt;/li&gt;
+&lt;li&gt;What is its degree of organization ?&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Complexity as size, complexity as entropy,complexity as algorithmic information content,complexity as a logical depth, complexity as a thermodynamic depth, complexity as computational capacity,statistical complexity,complexity as fractal dimension,complexity as a degree of hierarchy&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;life-and-evolution-in-computers&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Life and Evolution in Computers&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapters-8-9-self-reproducing-computer-programs-genetic-algorithms&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chapters 8-9: Self-reproducing computer programs, Genetic Algorithms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Biologists claim computers don’t check all the requisties of life like autonomy, metabolism,self-reproduction,survival instinct, evolution and adaptation.&lt;/li&gt;
+&lt;li&gt;Computers have been able to do these things one way or another&lt;/li&gt;
+&lt;li&gt;Dual use of information used for self-reproducing computer program. eg. Godel’s paradox, self-replication in DNA&lt;/li&gt;
+&lt;li&gt;John Von Neumann (formuated in 1950s) self-reproducing Automaton contained self-copying program as well as the machinery needed for its interpretation similar to what was found later in DNAs.&lt;/li&gt;
+&lt;li&gt;Von Neuman wanted to have computers reproduce themselves with mutation and comptete for resources to survive in the environment (survival instinct, evolution and adaptation).&lt;/li&gt;
+&lt;li&gt;John Holland’s 1975 book &lt;em&gt;Adaptation in natural and artifical systems&lt;/em&gt; laid out set of principles for adaptation and proposal for genetic algorithms&lt;/li&gt;
+&lt;li&gt;In genetic algorithm, we want the program to evolve over time itself and do the better job than it did in the beginning.&lt;/li&gt;
+&lt;li&gt;GA has two parts: population of condidate programs and fitness function that takes a candidate program and assigns to it a fitness value that measures how well that programs work on the desired task.&lt;/li&gt;
+&lt;li&gt;GAs have been used in solving many hard problems in many scientific and engineering areas as well as in art, achitecture and music.&lt;/li&gt;
+&lt;li&gt;Evolving Robby, the soda can collecting robot&lt;/li&gt;
+&lt;li&gt;Its difficukt to figure out how the interactions of various genes lead to the overall behavior or fitness of the robot&lt;/li&gt;
+&lt;li&gt;The increase in number of iterations of Robot’s work increases its performance and fitness. That means it evolves a solution that works at each iteration of the task.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;computation-writ-large&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Computation writ Large&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapters-101112-cellular-automata-life-and-the-universe-computing-with-particles-and-information-processing-in-living-systems&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;chapters 10,11,12: Cellular automata, life and the universe, computing with particles and information processing in living systems&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cellular automaton&lt;/li&gt;
+&lt;li&gt;In a computer, RAM stores program instructions and data as a memory and CPU fetches the instructions and data from the memory and executes the instructions on the data&lt;/li&gt;
+&lt;li&gt;cellular automaton is a grid of cells where each cell is a simple unit that turns on or off in response to the states in its local neighborhood.&lt;/li&gt;
+&lt;li&gt;The game of life (John COnway): Conway defined cells in terms of four life process; &lt;strong&gt;birth&lt;/strong&gt;-a dead cell with exactly three live neighbors becomes alive at the next step; &lt;strong&gt;survival&lt;/strong&gt;,a live cell with exactly two or three live neighbors stays alive; &lt;strong&gt;loneliness&lt;/strong&gt;, a live cell with fewer than two neigbor dies and a dead cell with fewer than three neighbors stays dead; and &lt;strong&gt;overcrowding&lt;/strong&gt;, a live or dead cell with more than three live neighbors dies or stays dead.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thinking Fast and Slow</title>
+      <link>/books/thinking-fast-and-slow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/books/thinking-fast-and-slow/</guid>
+      <description>
+
+
+&lt;div id=&#34;book-links-and-description&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Book links and description&lt;/h2&gt;
+&lt;p&gt;Amazon: &lt;a href=&#34;https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555&#34; class=&#34;uri&#34;&gt;https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ISBN: 0374275637&lt;/li&gt;
+&lt;li&gt;Date read: July, 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Informed gossip&lt;/li&gt;
+&lt;li&gt;The hope for informed gossip is that there are distinctive patterns in the errors people make&lt;/li&gt;
+&lt;li&gt;The mental work that produces impressions, intuitions and many decisions goes on in silence in our mind&lt;/li&gt;
+&lt;li&gt;Ability to identify and understand errors in judgement and choice in others and ourselves; provide richer and precise language to discuss them&lt;/li&gt;
+&lt;li&gt;Are people intuitive statisticians?&lt;/li&gt;
+&lt;li&gt;Reliability of the intuitive sense of statistical results from small samples&lt;/li&gt;
+&lt;li&gt;People tend to assess the relative importance of issues by the ease with which they are retrieved from the memory- and this is largely determined by the extent of coverage in the media; in other words our actions and thought processes are hugely affected by what is being mainly fed by the media.&lt;/li&gt;
+&lt;li&gt;If you find yourself in new situation or solving new problem, look for the familiar elements in them based on your previous experience, and act appropriately to resolve new problems.However, do not forget to evaluate how reliable is your previous experience, and do not make decision only based on heuristics judgement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;part-i-two-systems&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;PART I: Two Systems&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-1-characters-of-the-story&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Chapter 1: Characters of the story&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Two modes of thinking: System1: operates automastically and quickly with little or no effort and no sense of volunatry control; eg. angry face of the women shown in the picture is quickly judged as angry System2: Allocates attention to the effortful activities like complex computation. Its operations are often associated with the subjective experience of agency, choice and concentration&lt;/li&gt;
+&lt;li&gt;The gorrila study reveals we can be blind to the obvious, and we can be blind to our own blindness&lt;/li&gt;
+&lt;li&gt;Most of the time what you think originates in your system 1, but system 2 takes over when things get difficult&lt;/li&gt;
+&lt;li&gt;System2 overcomes impulses arising from system1 ( system2 is in charge of self control)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-2-attention-and-effort&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;chapter 2: Attention and effort&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Add-1 and add-3 game &lt;a href=&#34;https://psychology.stackexchange.com/questions/16531/kahnemans-add-one-three-exercise&#34;&gt;on/three exercise&lt;/a&gt;: dilating of pupil increase as the difficulty of computation increase&lt;/li&gt;
+&lt;li&gt;Pupils are the window to your soul&lt;/li&gt;
+&lt;li&gt;Dilation and contraction of pupil was a good measure of physical arousal that accompanies mental effort, and we could use it to understand how mind works&lt;/li&gt;
+&lt;li&gt;system2 protects the most important activity at hand; system1 takes ove rin emergencies and assigns total priority to self protective actions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Law of least effort&lt;/strong&gt;: If there are several ways of acheiving the same goal, people will eventually gravitate towards the least demanding course of action. In the economy of action, effort is cost, and the acquistion of skill is driven by the balance of benefits and costs. Laziness is built deep into our nature.&lt;/li&gt;
+&lt;li&gt;Avoid mental overload dividing our task into multiple easy steps, commiting intermediate results to a long term memory or to a paper rather than to an easily overloaded working memory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-3-the-lazy-controller&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;chapter 3: The Lazy controller&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Hard to do effortful computations while walking or running&lt;/li&gt;
+&lt;li&gt;Maintenance of coherent train of thoughts and occassional involvement in effortful thinking require self-control&lt;/li&gt;
+&lt;li&gt;People sometime expend considerable effort for long period of time without having to exert willpower. This is called “&lt;strong&gt;FLOW&lt;/strong&gt;” coined by psychologist Mihaly.&lt;/li&gt;
+&lt;li&gt;System1 has more influence on behavior when system2 is busy. Eg. When solving a computation you are given the choice of chocolates and fruits,and your system1 thinking comes into play and you make the choice of chocolates.&lt;/li&gt;
+&lt;li&gt;Effort of will or self control is tiring (Baumeister’s study); if you have to force yourself to do something, you are less willing or less able to self-control when the next challenge comes around. This phenomenon is called &lt;strong&gt;ego depletion&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;example: People are first depleted by a task in which they force eat virtuous food like radish, celery resisting the temptation of cakes and chocolates. later these people will give up earlier than normal when faced with difficult cognitive challenges&lt;/li&gt;
+&lt;li&gt;Bat and ball Problem&lt;/li&gt;
+&lt;li&gt;Intelligence is not only the ability to reason; it is also the ability to find relevant materials in memorys and to deploy attention when needed.&lt;/li&gt;
+&lt;li&gt;Rational people are “engaged” (more alert, more intellectually active,less willing to be satisfied with superficially attractive answers,more skeptical about their intuitions)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-4-the-associative-machine&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;chapter 4: The associative Machine&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Associative activation&lt;/strong&gt;: Ideas that have been evoked triggered many other ideas; in a cascade of activities in your brain. (operation of system1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Associatively coherent&lt;/strong&gt;: Self-reinforcing pattern of cognitive, emotional and physical responses that is both diverse and integrated&lt;/li&gt;
+&lt;li&gt;Principles of association to three (Scottish philosopher David Hume; Enquiry concerning human understanding, 1748): resemblence, contiguity in time and place and causality.&lt;/li&gt;
+&lt;li&gt;What is an idea: Psychologists think idea is nodes in a vast network, called associative memory, in which each idea is linked to many others&lt;/li&gt;
+&lt;li&gt;One idea activates many other ideas; but only few stay in our consciousness, most of them are hidden&lt;/li&gt;
+&lt;li&gt;Most of associative thinking is silent; you know far less about yourself than you feel you do&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;primimg effect&lt;/strong&gt;: Florida effect; Influencing an action by the idea: Ideomotor effect&lt;/li&gt;
+&lt;li&gt;Reciprocol priming effects tend to produce a coherent reaction: if you were primed to think of old age, you would tend to act old, and acting old would reinforce the thought of old age.&lt;/li&gt;
+&lt;li&gt;Common admonition to act “calm and kind” regardless of how you feel is a good advice: you are likely to be rewarded by actually feeling calm and kind&lt;/li&gt;
+&lt;li&gt;Book stranger to ourselves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-5-cognitive-ease&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;chapter 5: Cognitive Ease&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;cognitive strain&lt;/strong&gt; and &lt;strong&gt;cognitive ease&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Repeated experience, clear display,primed idea and good mood induce cognitive ease and they feel familiar, true, good and effortless&lt;/li&gt;
+&lt;li&gt;When you are at ease, you are less casual and superficial in thinking whereas when you feel strained, you feel less comfortable, make few errors but you are also less intuitive and less creative than usual.&lt;/li&gt;
+&lt;li&gt;Anything that makes it easier for the associative machine to run smoothly will also bias beliefs. A reliable way to make people believe in falsehoods is frequent repetition, and because familiarity is not easily distinguished from truth.&lt;/li&gt;
+&lt;li&gt;When we are uncomforatable and unhappy, we lose touch with our intuition (operation of system1)&lt;/li&gt;
+&lt;li&gt;Familiarity breeds liking. It might be a mere exposure effect; I am in a very good mood today, and my system2 is weaker than usual. I must be extra careful&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-6-norms-surprises-and-causes&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Chapter 6: Norms, Surprises and Causes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;The main function of system1 is to maintain and update the model of your personal world, which represents what is normal in it.&lt;/li&gt;
+&lt;li&gt;[Norm Theory] &lt;a href=&#34;https://pdfs.semanticscholar.org/9809/8ee48700173e2f09aeff48c406ef943918b5.pdf&#34; class=&#34;uri&#34;&gt;https://pdfs.semanticscholar.org/9809/8ee48700173e2f09aeff48c406ef943918b5.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The automatic search for causes shapes our thinking to explain an event regardless of the cause being related to the event&lt;/li&gt;
+&lt;li&gt;She can’t accept that she was just unlucky; she needs a causal story. She will end up thinking that someone intentionally sabotaged her work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-7-a-machine-for-jumping-to-conclusions&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Chapter 7: A machine for jumping to conclusions&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Jumping to conclusions is efficient if the conclusions are likely to be correct and the costs of an occasional mistake acceptable, and if the jump saves much time and effort. Jumping to conclusions is risky when the situation is unfamiliar, the stakes are high, and there is no time to collect more information.&lt;/li&gt;
+&lt;li&gt;System1 interprets an event based on recent memory and current context; conscious doubt is not the reportoire of system1. Uncertainty and doubt are the domain of system2.&lt;/li&gt;
+&lt;li&gt;System2 is sometimes busy and often lazy. People are more likely to be influenced by empty persuasive messages such as commercials when they are tired and depleted.&lt;/li&gt;
+&lt;li&gt;Associative memory contribute to general &lt;em&gt;confirmation bias&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;A deliberate search for confirming evidence, known as &lt;em&gt;positive test strategy&lt;/em&gt; is how system 2 tests hypothesis. This is contrary to rules of philosophers of science who advise testing hypothesis trying to refute them. eg. when asked “is sam friendly?” different instances of sam’s behavior will come to mind than when asked “is sam unfriendly?”&lt;/li&gt;
+&lt;li&gt;People often seek data that are likely to be compatible to the beliefs they currently hold&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Halo effect&lt;/strong&gt;(Exaggerated Emotional Coherence): Halo effect increases the weight of first impressions, sometimes to the point that subsequent information is mostly wasted.&lt;/li&gt;
+&lt;li&gt;To derive the most useful information from multiple sources of evidence, you should always try to make these sources independent of each other&lt;/li&gt;
+&lt;li&gt;Allowing the observers to influence each other effectively reduces the size of the sample, and with it the precision of the group estimate. (the jar experiment; book: wisdom of crowds)&lt;/li&gt;
+&lt;li&gt;When there are multiple witnesses to an event, they are not allowed to discuss it before giving their testimony. The goal is not only to prevent collusion by hostile witness, it is also to prevent unbiased witnesses from influencing each other. Witnesses who exchange their experiences will tend to make similar errors in their testimony, reducing the total value of information they provide. Eliminating redundancy from your sources of information is always a good idea.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What you see is All there is&lt;/strong&gt; System1 creates coherence of stories discarding the amount and quality of the data on which the story is based. Jumping to conclusions on the basis of limited evidence and not looking for evidences unware to you is the basis of system1, and system2, being lazy follows system1 blindly sometimes.&lt;/li&gt;
+&lt;li&gt;They made that big decision on the basis of a good report from one consultant. WYSIATI- They did not seem to realize how little information they had. They didn’t want more information that might spoil their story.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-8-9-how-judgements-happenanswering-an-easier-question&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Chapter 8, 9: How Judgements Happen,Answering an easier question&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Good mood and cognitive ease are the human equivalents of assessments of safety and familiarity&lt;/li&gt;
+&lt;li&gt;Judgement heuristic: People fall for the quick assessment of candidate based on how confident they look when they should be using system2 for true assessment.&lt;/li&gt;
+&lt;li&gt;Intensity matching: Tendency of using unrelated characteristics of a person to predict another characteristic. eg. predict Julie’s GPA as above 3.5 based on her ability to read at an early age.&lt;/li&gt;
+&lt;li&gt;Mental Shotgun: Conflict with irrelevant answer disrupts performance&lt;/li&gt;
+&lt;li&gt;Substitution: If a satisfactory answer to hard question is not found quickly, System 1 will find related question that is easier and will answer it.&lt;/li&gt;
+&lt;li&gt;The technical definition of heuristic is a simple procedure that helps find adequate, though often imperfect, answers to difficult questions&lt;/li&gt;
+&lt;li&gt;The present state of mind looms very large when people evaluate their happiness&lt;/li&gt;
+&lt;li&gt;He likes the project, so he thinks its costs are low and its benefits are high. Nice example of affect heuristic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;part-ii-heuristics-and-biases&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;PART II: Heuristics and Biases&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-10-law-of-small-numbers&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chapter 10: Law of small numbers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;System1 is highly adept in one form of thinking- it automatically and effortlessly identifies causal connection between events, sometimes even when the connection is spurious.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;artifacts&lt;/strong&gt; observations that are produced entirely by some aspect of the method of research eg. by differences in sample size&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;law of small numbers&lt;/strong&gt;: When we look at small samples, there is more likelihood of seeing the observations with extreme results. i.e we will see huge variation in the data than compared to larger sample size.&lt;/li&gt;
+&lt;li&gt;The exaggerated faith in small samples is only one example of a more general illusion-we pay more attention to the content of messages than to information about their reliability, and as a result end up with a view of the world around us that is simpler and more coherent than the data justify. Jumping to conclusions is a safer sport in the world of our imagination than it is in reality.&lt;/li&gt;
+&lt;li&gt;Statistics produce many observations that appear to beg for causal explanations but do not lend themselves to such explanations. Many facts of the world are due to chance, including accidents of sampling. Casual explanations of chance events are inevitably wrong.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-1112131415161718-anchors-the-science-of-availability-availability-emotions-risk-tom-ws-specialty-linda-less-is-more-causes-trump-statistics-regression-to-the-mean-taming-intutitve-predictions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chapter 11,12,13,14,15,16,17,18: Anchors, The science of Availability, Availability, emotions, risk, Tom W’s Specialty, Linda: Less is more, Causes trump statistics, Regression to the mean, Taming Intutitve predictions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Anchoring effect&lt;/strong&gt; If you consider how much you should pay for a house, you will be influenced by the asking price. The same house will appear more valuable if its listing price is high than if it is low, even if you are determined to resist the influence of its number; the examples of anchoring effect is endless.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anchoring Index&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Plans are best case scenarios. Let’s avoid anchoring on plans when we forecast actual outcomes. Thinking about ways the plan could go wrong is one way to do it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Availability Heuristic&lt;/strong&gt; A dramatic event temporarirly increases availability of its category. A plane which receives a lot of media coverages temporarily alter your feelings about the safety of flying.&lt;/li&gt;
+&lt;li&gt;The CEO has had several successes in a row, so the failure doesn’t easily come to her mind. The availability bias is making her overconfident.&lt;/li&gt;
+&lt;li&gt;People substitute probability for representativeness&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conjuction Fallacy&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;They added cheap gift to an expensive product, and made the whole deal less attractive. In this case less is more.&lt;/li&gt;
+&lt;li&gt;You are more likely to learn something by finding surprises in your own behavior than by hearing surprising facts about people in general.&lt;/li&gt;
+&lt;li&gt;success=talent + Luck&lt;/li&gt;
+&lt;li&gt;Great success=a little more talent + a lot of luck&lt;/li&gt;
+&lt;li&gt;Perhaps his second interview was less impressive than the first because he was afraid of disappointing us, but more likely it was his first that was unusually good due to regression to the mean.&lt;/li&gt;
+&lt;li&gt;Our intuitive prediction is very favorable, but it is probably too high. Let’s take into account the strength of our evidence and regress the prediction toward the mean.&lt;/li&gt;
+&lt;li&gt;That start-up acheived an outstanding proof of concept, but we should not expect them to do as well in the future. They are still long way from the market and there is a lot of room for regression.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;part-iii-overconfidence&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Part III: Overconfidence&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-192021222324-the-illusion-of-understanding-the-illusion-of-validityintuitions-vs.formulas-expert-intuition-when-can-we-trust-it-the-outside-viewthe-engine-of-capitalism&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chapter 19,20,21,22,23,24: The illusion of understanding, the illusion of validity,intuitions vs. formulas, Expert Intuition: When can we trust it?, the outside view,The engine of capitalism&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nassim Taleb notion of &lt;strong&gt;narrative fallacy&lt;/strong&gt;: How flawed stories of the past shape our views of the world and our expectations for the future. Humans constantly fool themselves by constructing filmsy accounts of the past and believing they are true.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;hindsight bias&lt;/strong&gt; :This mistake appears obvious, but it is just hindsight. You could not have known in advance.&lt;/li&gt;
+&lt;li&gt;He is learning too much from this success story, which is too tidy. He has fallen for narrative fallacy.&lt;/li&gt;
+&lt;li&gt;It is wise to take admissions of uncertainty seriously, but declarations of high confidence mainly tell you that an individual has constructed a coherent story in his mind, not necessarily that the story is true.&lt;/li&gt;
+&lt;li&gt;She is a hedgehog. She has a theory that explains everything, and it gives her the illusion that she understands the world.&lt;/li&gt;
+&lt;li&gt;Let’s decide on advance what weight to give to the data we have on the candidates’ past performance. Otherwise we will give too much weight to our impression from the interviews.&lt;/li&gt;
+&lt;li&gt;Create a list of requirements or characteristics that are independent from one another you are looking for in a candidate, and score them on a scale of 1-5 (weak-very strong) one by one.&lt;/li&gt;
+&lt;li&gt;When evaluating expert intuition you should always consider whether there was an adequate opportunity to learn the cues, even in a regular environment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The planning fallacy&lt;/strong&gt; : Overly optimistic forecasts of the outcome of the projects are found everywhere&lt;/li&gt;
+&lt;li&gt;He’s taking an inside view. He should forget about his own case and look for what happened in other cases (outside view).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Optimistic bias&lt;/strong&gt; : They have an illusion of control. they seriouly underestimate the obstacles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;part-iv-choices&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Part IV: Choices&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-25262728293031323334-bernoullis-errors-prospect-theory-the-endowment-effect-bad-events-the-fourfold-patternrare-events-risk-policies-keeping-scorereversalsframes-and-reality&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chapter 25,26,27,28,29,30,31,32,33,34: Bernoulli’s errors, prospect theory, The endowment effect, Bad Events, The fourfold pattern,rare events, risk policies, keeping score,Reversals,Frames and Reality&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bernoulli’s point: People’s choices are based not on dollar values but on pyschological values of outcomes, their utilities.&lt;/li&gt;
+&lt;li&gt;Bernoulli’s error: Both candidates are willing to accept the salary we’re offering, but they won’t be equally satisfied because their reference points are different. She currently has a much higher salary.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;risk aversion&lt;/strong&gt;&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;When compared or weighted against each other, losses looms larger than gains.&lt;/li&gt;
+&lt;li&gt;Considering her vast wealth, her emotional response to trivial losses and gains make no sense&lt;/li&gt;
+&lt;li&gt;She didn’t care which of the two offices she would get, but a day after the announcement was made, she was no longer willing to trade. Endowment effect!&lt;/li&gt;
+&lt;li&gt;This reforn will not pass. those who stand to lose will fight harder than those who stand to gain&lt;/li&gt;
+&lt;li&gt;The large impact of 0-5% illustrates possibility effect, whcih causes highly unlikely events to be weighted disproportionately more thena they deserve. eg: people are willing to pay more than the expecte dvalue for very small chance to win a large prize in lottery.&lt;/li&gt;
+&lt;li&gt;The improvement from 95% to 100% is another qualitative change that has large impact, the certainty effect.&lt;/li&gt;
+&lt;li&gt;People overestimate the probabilities of unlikely events; people overweight unlikely events in their decisions&lt;/li&gt;
+&lt;li&gt;ENterpreuners and the investors who evaluate their prospects are prone both to overestimate their chances and to overweight their estimates.&lt;/li&gt;
+&lt;li&gt;Tsunamis are very rare in Japan, but the image is so vivid and compelling that tourists are bound to overestimate their probability.&lt;/li&gt;
+&lt;li&gt;They want people to be worried by the risk. That’s why they describe it as 1 death per 1000. they’re counting on denominator neglect.&lt;/li&gt;
+&lt;li&gt;They will feel better about what happened if they manage to frame the outcome in terms of how much money they kept rather than how much they lost.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;part-v-two-selves&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Part V : TWo Selves&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chapter-35363738-two-selves-life-as-a-story-experienced-well-being-thinking-about-life&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chapter 35,36,37,38: Two selves, Life as a story, Experienced, well-being, Thinking about life&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What we learn from the past is to maximize the qualities of our future memories, not necessarily of our future experience. This is the tyranny of remembering self.&lt;/li&gt;
+&lt;li&gt;peak end rule and duration negelect&lt;/li&gt;
+&lt;li&gt;Its a bad case of duration neglect when you are giving good and the bad part of your experience equal weight, although the good part lasted ten times as long as the other.&lt;/li&gt;
+&lt;li&gt;The easiest way to increase happiness is to control your use of time. Can you find mor etime to do the things you enjoy doing?&lt;/li&gt;
+&lt;li&gt;Nothing in life is as important as you think it is when you are thinking about it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conclusions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conclusions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The perspective of remembering self is not always correct&lt;/li&gt;
+&lt;li&gt;A moment can gain importance by altering the experience of subsequent events eg: 1 hour spent practicing guitar each day may enhance experience of many hours of playing or listening to music years later.&lt;/li&gt;
+&lt;li&gt;Remembering self and experiencing self should both be considered because their interests do not always coincide&lt;/li&gt;
+&lt;li&gt;The definition of rationality as coherence is impossibly restrictive; it demands adherence to rules of logic which the finite mind is not able to implement. Humans are not described by the rational-agent model.&lt;/li&gt;
+&lt;li&gt;Deviating from normal choice is an act of commission, which requires effortful deliberation, and takes on more responsibility, and is more likely to evoke regret than doing nothing.&lt;/li&gt;
+&lt;li&gt;System1 does X is shortcut for X occurs automatically; system2 is mobilized to do Y is shortcut for arousal increases, puplis dilate,attention is focused and activity Y is performed&lt;/li&gt;
+&lt;li&gt;The acquisition of skills requires a regular environment,an adequate opportunities to practice,and rapid and unequivocal feedback about the correctness of thoughts and action.&lt;/li&gt;
+&lt;li&gt;Decision makers are sometimes better able to imagine the voices of present gossipers and future critics than to hear the hesitant voice of their own doubts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

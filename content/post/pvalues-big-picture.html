@@ -1,0 +1,15 @@
+---
+title: "Big picture behind P-values"
+author: "Subash Pathak"
+date: "January 10, 2020"
+output: html_document
+---
+
+
+
+<p>About a year ago, ASA (American Statistical Association) published a series of articles urging journals and research investigators to ban the use of pvalues in their findings. You might be thinking, what is wrong with p-values? The answer is: there is nothing inherently wrong with pvalues. Its the way they are interpreted.</p>
+<p>This post shows you overall picture behind p-value. Lets assume you are conducting an experiment (it could be testing the difference in efficacy between 2 drugs in medicine which we call clinical trial or testing difference between two product strategies in business settings commonly known as A/B testing.) Lets say after the experiment is over, you calculated pvalue of 0.02. What does this 0.02 pvalue telling us?</p>
+<p>We conduct an experiment with the assumption that there is no difference in between groups we are testing which is called null hypothesis. The idea is to see how far off we are from our null hypothesis (i.e the assumption of equivalent group) after we finished the experiment. P-value is built on this idea of assumption that there is no difference between groups. In our case pvalue is 0.02 which says that, provided this assumption of no difference between groups, if we repeateadly conduct 1000 similar experiments, only 20 such experiments would give us results as or more surprising than our current result. This tells you that since very few number of repeated experiments would give us the results as or more surprising than our current data, we have some degree of evidence against our assumption of equivalent groups. However, this doesn’t mean alternative is 100% true.</p>
+<p>Above p-value of 0.02 might seem impressive for any experiment,and people tend to conclude there is a “statistically significant difference” between 2 groups and use it as the ultimate truth. So, the point is rather than accepting p-value as the ultimate truth, we need to look at other measures of uncertainty surrounding it. As an investigator one needs to look at the magnitude of difference between 2 groups and confidence intervel associated with it and see if it is meaningful enough. Uncertainty expressed as the difference between groups (which we call “effect size”) and confidence interval help explore research findings in a deeper level. Blindly trusting results based on p-value cutoff won’t lead to good research.</p>
+<p>(I have explained confidence intervel in this post)[<a href="https://residuals.netlify.com/concepts/confidence-interval/" class="uri">https://residuals.netlify.com/concepts/confidence-interval/</a>]</p>
+<p>I will talk more about misconceptions of pvalues and how we can calculate p-values by hand in later posts.</p>

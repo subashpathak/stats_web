@@ -1,0 +1,47 @@
+---
+title: "Sampling Distribution of the Sample Mean Clearly Explained"
+author: "Subash Pathak"
+date: "January 10, 2020"
+output: html_document
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+##What is Sampling Distribution of the Sample Mean?
+We use sample mean as one of the measures of summary of variables in a study. In other words, sample mean is the average of the values observed. Lets imagine you conduct the same study with same sample size again and again and calculate sample mean in each case. Frequency distribution of sample means obtained from those repeated studies is called sampling distribution of the mean. It can be displayed using histogram or density curve.
+
+For example, you run a study of sample size 12000 and replicate it 1000 times. Assume our data is normally distributed for simulation purposes. We will calculate 1000 sample means and show the distribution of those means using histogram overlayed with density curve as described below.
+
+```{r lib, echo=TRUE}
+#set libraries
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+```
+
+```{r simulation, echo=TRUE}
+#replicate a study of sample size 12000  1000 times and calculate sample mean of each of those studies
+set.seed(1431)
+sample_avg = rep(NA, 1000) #replicate NA 1000 times
+for (i in 1:1000){
+  sample_avg[i]= mean(rnorm(12000))
+}
+#sample_avg<- as.integer(sample_avg)
+#change the distribution of sample mean to data frame
+sample<-as.data.frame(sample_avg)
+
+#create histogram of sampling distribution of the sample mean overlayed with density curve
+hist<- ggplot(sample, aes(x=sample_avg)) + 
+  geom_histogram(aes(y=..density..)) + geom_density() + 
+  labs(x="Sample Average",y="Density") + ggtitle("Histogram showing sampling distribution of the sample mean")
+hist
+```
+
+This idea of sampling distribution is the fundamental concept based on which statistical inferences are made in frequentist Statistics. We will look at it more closely how it applies to one of the most important ideas in statistics called 'Central Limit Theorem' in another post.
+
+One thing that comes to mind after going through this explanation is that its not easy to repeat studies to estimate sampling distribution of sample mean in practice. We will have to use statistical techniques that would be able to estimate sampling distribution of the mean from a single random sample. We will discuss more about this in later posts in details.

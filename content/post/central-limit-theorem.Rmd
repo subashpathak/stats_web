@@ -1,0 +1,68 @@
+---
+title: "Central Limit Theorem"
+author: "Subash Pathak"
+date: "January 10, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##What is Central Limit Theorem?
+Textbook definition of Central Limit Theorem states that "As sample size increases, [the sampling distribution of the mean](https://statsisfun.netlify.com/concepts/sampling-dist-sample-mean/) for an independent identically distributed variable will approximately resemble that of normal distribution regardless of its distribution".
+
+This definition of CLT needs some breakdown into simpler parts. First of all, a random variable can have different probability distribution. It could be right, left skewed or uniformly distributed etc.. However, if that variable has sufficient enough sample size, its distribution approximates normal distribution irrespective of the probability distribution. We will explore this key idea using a series of simulation examples.
+
+```{r lib, echo=TRUE}
+#set libraries
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+```
+
+
+
+```{r central, echo=TRUE}
+# Let's look at a right skewed (negative binomial distribution)
+set.seed(1536)
+#this gives us a set of random numbers that follow negative binomial distribution with a sample size of 100
+neg_binom<-rnbinom(100,30,0.3)
+neg_binom1<-as.data.frame(neg_binom)
+
+#plot histogram and density curve
+hist<- ggplot(neg_binom1, aes(x=neg_binom)) + 
+  geom_histogram(aes(y=..density..),bins=20) + geom_density() + 
+  labs(x="X",y="Density") + ggtitle("Right Skewed negative binomial distribution")
+hist
+```
+
+
+If we increase sample size sufficiently enough, we will see the distibution of the variable X resembles to that of normal distribution. This means we will acheive a symmetrical distribution of this right skewed variable if we have larger enough sample size. Lets see if we can show this in an example:
+
+```{r central1, echo=TRUE}
+# Let's take the same negative binomial distribution with large sample size 
+
+set.seed(1546)
+#this gives us a set of random numbers that follow negative binomial distribution with a sample size of 10000
+neg_binom<-rnbinom(10000,30,0.3)
+neg_binom1<-as.data.frame(neg_binom)
+
+#plot histogram and density curve
+hist<- ggplot(neg_binom1, aes(x=neg_binom)) + 
+  geom_histogram(aes(y=..density..),bins=20) + geom_density() + 
+  labs(x="X",y="Density") + ggtitle("Normal Distribution obtained using larger sample size")
+hist
+```
+
+
+Here, once we sufficiently increase the number of samples, the right skewed binomial distribution with same parameters resembles normal distribution. As we can clearly see from the figure that concentration of the values generated is around the center which is mean of the distribution approximating normal distribution.
+
+You can take any skewed family of distribution and repeat above procedures of simulation with larger sample size and you will get the distribution that approximates  normal distribution. This concept of central limit theorem has broader implications in the field of statistical inferences. I will expand on this in more details in future posts.
+
+
+
+
+
+
+

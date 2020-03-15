@@ -1,0 +1,67 @@
+---
+title: "Confidence Interval"
+author: "Subash Pathak"
+date: "March 02, 2020"
+output: html_document
+---
+
+
+
+<div id="how-do-you-explain-confidence-intervals-intuitively" class="section level2">
+<h2>How do you explain confidence intervals intuitively?</h2>
+<p>In any study,We all know we want to test our hypothesis to see if there is any difference between our assigned groups using some kind of experiment. As a common rule, point estimate is calculated as the difference in means between two groups and 95 % confidence interval is reported as a means of quantifying uncertainty associated with that estimate.</p>
+<p>When people hear about 95% confidence interval, they mistakenly interpret it as the interval with 95% chance of containing true population parameter we are trying to estimate. This is entirely a wrong way to think about confidence interval. Let me make this clear with a simulation example.</p>
+<p>Textbook definition of 95% confidence interval tells us that if we repeatedly conduct experiments of sample size n and calculate confidence interval in each case, 95 % of those intervals would contain the population parameter we are trying to estimate.</p>
+<p>Assume an experiment where we want to find out the effect of a treatment (Active vs Control) on our outcome. Lets assume for our outcome simulation We have following population parameters. It means we know true population effect here since we created this for simulation. It is always unknown in real world.</p>
+<ul>
+<li>true population effect delta= 200 (true difference in mean outcome between Active and control group)</li>
+<li>standard deviation = 100</li>
+<li>Sample size = 200</li>
+<li>Number of trials repeated with this sample size = 100</li>
+</ul>
+<pre class="r"><code>set.seed(148)
+n &lt;- 200
+sigma&lt;-100
+delta&lt;-200
+# Store means, upper and lower intervals from 100 trials
+means&lt;-c()
+upper&lt;-c()
+lower&lt;-c()
+
+for (i in 1:100) {
+  #Simulate a normal distribution using above parameters
+  x&lt;-rnorm(n,delta,sigma)
+  means[i]&lt;-mean(x)
+  lower[i]&lt;-means[i]-1.96*sigma/sqrt(n)
+  upper[i]&lt;- means[i]+1.96*sigma/sqrt(n)
+  
+}
+
+# change to dataframe
+means_frame&lt;- as.data.frame(means)
+id&lt;-rownames(means_frame)
+id&lt;-as.numeric(id)
+means_list&lt;-cbind(means_frame,id)
+
+upp_lower&lt;-as.data.frame(cbind(lower,upper))</code></pre>
+<pre class="r"><code>#plot 95% confidence interval for each estimate
+ true_value&lt;-ifelse (lower &gt;= 200 &amp; upper &gt;= 200 ,1,0) 
+true&lt;-as.data.frame(true_value)
+
+#Combine everything into one dataset
+
+all&lt;-cbind(upp_lower,true, means_list)
+
+g&lt;-ggplot(all,aes(id,means,color=factor(true_value,labels=c(&quot;Includes true effect&quot;,&quot;Excludes true effect&quot;)))) +
+  geom_errorbar(aes(ymin=lower,ymax=upper)) +
+  geom_line() +
+  geom_point() +
+  scale_x_continuous(limits=c(0,100)) +
+  labs(x=&quot;Number of Trials&quot;,y=&quot;Confidence limit&quot;,color=&quot;Confidence&quot;) +
+  geom_hline(yintercept=200,color=&quot;black&quot;,linetype=&quot;dashed&quot;,size=0.5)
+
+g</code></pre>
+<p><img src="/post/confidence-interval_files/figure-html/plots-1.png" width="672" /></p>
+<p>Here, as stated in the definition of 95% confidence interval we calculated confidence intervals for 100 trials with same sample size. As expected we clearly see from above figure (indicated by green dots and error bars), 5 trials out of 100 didn’t have confidence limit that contain true population effect of 200. Remaining 95 intervals contain true population effect.</p>
+<p>It is important to notice that we will never know true population effect in practice. Some intervals will contain true value whereas some won’t. We cannot tell which contain the true effect. However, provided that we know nothing about true effect, we can assign a probability for the confidence interval being included in our analysis. Looking at the figure above we can say 95 out of 100 i.e. 95% of the intervals cover true value.</p>
+</div>

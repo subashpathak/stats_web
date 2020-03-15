@@ -1,0 +1,35 @@
+---
+title: "Inappropriate use of Bivariable analysis to screen risk factors for use in Multivariable analysis"
+author: "Subash Pathak"
+date: "January 10, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Link to the paper
+https://www.ncbi.nlm.nih.gov/pubmed/8699212
+
+The paper goes into in-depth discussion of how selecting variables based on significance achieved using pvalue criterion of less than 0.05 for use in multivariable analysis won't be able to embrace the confounders sufficient to control for confounding. When we are only looking at bivariable analysis, it only gives us unadjusted association between one single risk factor and our outcome of interest. This won't tell us anything about intercorrelation or mutual confounding among risk factors. If risk factors (independent variables) are not truly independent of each other, a nonsignificant risk factor in bivariable analysis is not necessarily nonsignificant in multivariable analysis. BVS (Bivariable selection method) could potentially prevent important variable from being included in multivariable model which could lead to distorted or incomplete findings.
+
+
+Authors in the paper have shown some hypothetical as well practical examples where they have clearly indicated how BVS method could be problematic when creating multivariable model. In all these examples they have shown how one risk factor could be mutually confounded to other risk factors. If we use BVS method, there is no way we would be able to know mutual confounding among risk factors and this would lead to incorrect or imprecise formulation of multivariable model.
+
+
+Some suggestions and alternatives to BVS method:
+
+* Investigators should think carefully about the candidate variables that could affect their outcome of interest and use them all in MV model if its only a small set of variables.
+* If collinearity exists due to the inclusion of large set of independent variables and the investigator wishes to screen variables in order to avoid collinearity, this type of screening must be based on prior knowledge of the variables or principles of subject matter being studied; alternatively, other special statistical techniques like regularized regression or principal component analysis can be used. The point is that investigator should not let a computer program decide how to handle collinearity. Additionally, BVS method is useless to solve any problem caused by collinearity.
+* Only those variables that are known or expected to be risk factors for the outcome by either principles of the study or the prior knowledge of the variables should be included in MV model.
+* Independent variables with empty cells in contingency table with discrete outcome can be handled by collapsing the categories or treating the variable as continuous.
+* (My suggestion): I think it is important for investigators to think about cause-effect relationship between outcome and risk factors drawing Directed Acyclic Graphs (DAGs). This will bring clarity in the research question being explored and help formulate multivariable model that would reduce confounding and bias in our analysis.
+("The book of why: The new science of Cause and effect" by Judea Pearl is an excellent resource to learn about DAGs)
+
+
+In conclusion, authors point out that testing bivariable association between variables in the data cannot demonstrate whether a variable is a confounder regardless of the types of statistical methods being used. When a confounder exists and is not properly controlled, estimation of the effect of risk factor on outcome is biased and distorted. To sum up, this paper illustrates BVS method is not able to correct for possible confounders, and its use is not an appropriate way to select variables to be used in multivariable analysis.
+
+
+
+

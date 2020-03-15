@@ -1,0 +1,33 @@
+---
+title: "A Mindscape Episode: Quassim Cassam Intellectual Vices"
+author: "Subash Pathak"
+date: "August 29, 2019"
+output: html_document
+---
+
+##Podcast Links and description
+* Podcast Name: Mindscape with Sean Carroll
+* https://www.preposterousuniverse.com/podcast/2019/08/26/61-quassim-cassam-on-intellectual-vices-and-what-to-do-about-them/
+* Apple podcast app
+* Date listened: August 29, 2019
+
+## Some notes from the Interview
+* Epistemiology: A subject that deals with philosophical study of knowledge. It deals with what it is to truly know something, sources of knowledge and uses contrived examples to address the problems we are facing.
+* Vices are personal characteristics ; one person may have while others may not. Some vices takes the form of personal traits like closedmindedness, others like wishful thinking, prejudices etc..
+* There are personal intellectual qualities and there are perosnal intellectual qualities for which we can be criticized...that's the basic notion of intellectual vices.
+* Our personal traits can be revised, and we don't always have to be the victim of our characters. The question is how easy would it be to revise personal traits.
+* For exmaple: A young Tailban man who has a lot of prejudices against women thinks these because of the community and circumstances and might be hard to change. When we are criticizing his attitudes towards women, are we criticizing him or his attitudes? Sometimes its hard to separate this issue.
+* Overconfidence is catastrophic when it comes to war and military planning.
+* Attitudes, characteristics, personality traits and conginitive bias actively get in the way of truth.
+* In 1973 Israel received reports of attack from Egypt and Syria, but they strongly believed Arabs wouldn't attack. The attack did happen. Here the vice is closed mindedness. Commander's mind was not willing to listen to other point of view of possible attacks from Egypt and Syria.
+* Lesson here is we should force ourselves to think alternatives and be open minded.
+* Operation babarosa: When Nazis invaded Russia, Stallion believed they would not attack regardless of multiple reports. An example of closedmindedness.
+* Its possible to have too much of something and we should draw line between open mindedness and closed mindedness
+* In the end the world turns apparent and we see flaws in our thinking.
+* Conspiracy theory are the forms of political propoganda and are created to advance your confirmation bias
+* We are bad at detecting intellectual vices in ourselves but good at detecting in others
+* Be honest with ourselves, our thinking styles and zoom into our thought process and look at things that we are willing to recognize vs. not willing to recognize.
+* Recognize degrees of wishful thinking
+* We need to talk more about these intellectual vices and people will start self-correcting themselves.
+
+

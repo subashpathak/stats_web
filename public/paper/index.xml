@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paper Notes and Review | Residuals</title>
+    <link>/paper/</link>
+      <atom:link href="/paper/index.xml" rel="self" type="application/rss+xml" />
+    <description>Paper Notes and Review</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Paper Notes and Review</title>
+      <link>/paper/</link>
+    </image>
+    
+    <item>
+      <title>Inappropriate use of Bivariable analysis to screen risk factors for use in Multivariable analysis</title>
+      <link>/paper/bvs_method_paper_summary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/paper/bvs_method_paper_summary/</guid>
+      <description>
+
+
+&lt;div id=&#34;link-to-the-paper&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Link to the paper&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/8699212&#34; class=&#34;uri&#34;&gt;https://www.ncbi.nlm.nih.gov/pubmed/8699212&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The paper goes into in-depth discussion of how selecting variables based on significance achieved using pvalue criterion of less than 0.05 for use in multivariable analysis won’t be able to embrace the confounders sufficient to control for confounding. When we are only looking at bivariable analysis, it only gives us unadjusted association between one single risk factor and our outcome of interest. This won’t tell us anything about intercorrelation or mutual confounding among risk factors. If risk factors (independent variables) are not truly independent of each other, a nonsignificant risk factor in bivariable analysis is not necessarily nonsignificant in multivariable analysis. BVS (Bivariable selection method) could potentially prevent important variable from being included in multivariable model which could lead to distorted or incomplete findings.&lt;/p&gt;
+&lt;p&gt;Authors in the paper have shown some hypothetical as well practical examples where they have clearly indicated how BVS method could be problematic when creating multivariable model. In all these examples they have shown how one risk factor could be mutually confounded to other risk factors. If we use BVS method, there is no way we would be able to know mutual confounding among risk factors and this would lead to incorrect or imprecise formulation of multivariable model.&lt;/p&gt;
+&lt;p&gt;Some suggestions and alternatives to BVS method:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigators should think carefully about the candidate variables that could affect their outcome of interest and use them all in MV model if its only a small set of variables.&lt;/li&gt;
+&lt;li&gt;If collinearity exists due to the inclusion of large set of independent variables and the investigator wishes to screen variables in order to avoid collinearity, this type of screening must be based on prior knowledge of the variables or principles of subject matter being studied; alternatively, other special statistical techniques like regularized regression or principal component analysis can be used. The point is that investigator should not let a computer program decide how to handle collinearity. Additionally, BVS method is useless to solve any problem caused by collinearity.&lt;/li&gt;
+&lt;li&gt;Only those variables that are known or expected to be risk factors for the outcome by either principles of the study or the prior knowledge of the variables should be included in MV model.&lt;/li&gt;
+&lt;li&gt;Independent variables with empty cells in contingency table with discrete outcome can be handled by collapsing the categories or treating the variable as continuous.&lt;/li&gt;
+&lt;li&gt;(My suggestion): I think it is important for investigators to think about cause-effect relationship between outcome and risk factors drawing Directed Acyclic Graphs (DAGs). This will bring clarity in the research question being explored and help formulate multivariable model that would reduce confounding and bias in our analysis. (“The book of why: The new science of Cause and effect” by Judea Pearl is an excellent resource to learn about DAGs)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In conclusion, authors point out that testing bivariable association between variables in the data cannot demonstrate whether a variable is a confounder regardless of the types of statistical methods being used. When a confounder exists and is not properly controlled, estimation of the effect of risk factor on outcome is biased and distorted. To sum up, this paper illustrates BVS method is not able to correct for possible confounders, and its use is not an appropriate way to select variables to be used in multivariable analysis.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Notes and Summary of the paper Seven Myths of Randomization</title>
+      <link>/paper/seven_myths_of_randomisation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/paper/seven_myths_of_randomisation/</guid>
+      <description>
+
+
+&lt;div id=&#34;seven-myths-of-randomization&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Seven Myths of Randomization&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Link to the paper&lt;/strong&gt; &lt;a href=&#34;https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.5713&#34; class=&#34;uri&#34;&gt;https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.5713&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Link to the powerpoint presentation&lt;/strong&gt; &lt;a href=&#34;https://www.methodologyhubs.mrc.ac.uk/files/9214/3711/9501/Plenary-_Stephen_Senn.pdf&#34; class=&#34;uri&#34;&gt;https://www.methodologyhubs.mrc.ac.uk/files/9214/3711/9501/Plenary-_Stephen_Senn.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This paper offers some valuable insights into some of the myths of randomisation that seem to be popular among researchers and investigators.Some concerns are related to the practical realities of clinical research on patients, some regarding balance and some regarding the role of conditioning in a valid statistical inference.&lt;/p&gt;
+&lt;p&gt;Author makes use of an interesting example of game of rolling red and black dice to illustrate his points. Lets assume we want to know the probability of score of sum 10 from the rolling of red and black die. He goes on to list three variants of the game: 1. Variant 1: First state the probaility of 10 and roll the two dice together. The answer would be 4/36=1/12 2. Variant 2: The red die is rolled so that statistician knows the result and he rolls black die afterwards. probability of sum of 10 here would be (1/2* 0)+ (1/2*1/6)=1/12 3. Variant 3: red die is rolled and the score is unknown to statistician. Then he calls the odds and black die is rolled afterwards. It would be equivalent to variant 1.&lt;/p&gt;
+&lt;p&gt;The author says we can use these three scenarios as an analogy with clinical trial in which covariate information may or may not be available at baseline. In variant 1 there is no information available, in variant 2 there is info available at baseline and in variant 3 it might in principle, be available but nobody has seen it.&lt;/p&gt;
+&lt;p&gt;Following are seven myths of Randomised clinical trials discussed in this paper:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Myth 1: Patients are treated simultaneously in clinical trials&lt;/strong&gt; This myth seems to be surprisingly persistent with critics of randomisation. Generally, patients are entered into clinical trial soon after they are present. The recruitment period might well be longer than the follow up period in which outcomes of the patients are observed. It could be the case that some patients might have completed their trial before others have even started.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Myth 2: Balance of prognostic factors is necessary for valid inference&lt;/strong&gt; Balance of prognostic factors or covariates in a clinical trial may not happen all the time. That doesn’t mean our trial cannot be used to generate statistical inference. The imbalance seen in covariates are only by chance and we cannot think of it as a flawed study. If there is an imbalance in favor of treatment A, one can always find another imbalance that is equally in favor of treatment B if sufficiently many additional baseline characteristics are examined. Thus the imbalances cancel anyway.This source &lt;a href=&#34;https://discourse.datamethods.org/t/should-we-ignore-covariate-imbalance-and-stop-presenting-a-stratified-table-one-for-randomized-trials/547/3&#34;&gt;here&lt;/a&gt; by Professor Frank Harrell provides clear description with simulations on why we should not worry about covariate imbalance in randomised clinical trials.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Myth 3: Blinding can be carried out effectively without randomisation&lt;/strong&gt; Some critics believe that blinding can be carried out effectively without randomisation. In fact randomisation assures maximum unguessability of any sequence of allocation of treatment. We can’t do this effectively with random allocation of patients to different treatments. By definition, randomisation ensures each and every participant has equal and independent probablilty of being allocated to any treatment group in the study which implies the need for strong blinding. If you don’t randomise you have to assume that your strategy has not been guessed by the investigator.Not publishing the block size in your protocol is a classic example.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Myth 4: Randomisation is insufficient&lt;/strong&gt; This is in some sense is not a myth. Randomisation is not fully efficient and there seems to be loss of one patient per factor fitted compared to a completely balanced design which is not usually possible.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Myth 5: Randomisation precludes balancing covariates&lt;/strong&gt; We can build strata and randomise within them. Fisher’s strategy was balance what you can and randomise what you can’t.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Myth 6: Observed covariates may be ignored because one has randomised&lt;/strong&gt; This is the myth even some statisticians seem to believe. To ignore observed prognostics is to treat variant 2 of the game as if it were game 1. In case of game 1, it is necessary to consider with what probability each of the six scores of red die could arrive if it cannot be observed beforehand. However, once we know the score of the red die, this probability is no longer relevant. Also, conditioning on pre-specified prognostic factor seems to increase precision of our estimate increasing statistical power and reducing sample size requirements &lt;a href=&#34;https://www.jclinepi.com/article/S0895-4356(03)00379-2/fulltext&#34;&gt;Paper Link on this topic&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Myth 7: Large Trials are more balanced than small ones&lt;/strong&gt; Large and small trials are equally balanced. Its just that with larger trials we have narrower confidence limit and even small effect can be observed resulting in small p-values. This advantage of increased mean balance in covariates has been consumed in the form of narrower limits.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;For more details on links and lists of things regarding common statistical myth, following link can be used:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reference collection to pushback against common statistical myths&lt;/strong&gt; &lt;a href=&#34;https://discourse.datamethods.org/t/reference-collection-to-push-back-against-common-statistical-myths/1787&#34; class=&#34;uri&#34;&gt;https://discourse.datamethods.org/t/reference-collection-to-push-back-against-common-statistical-myths/1787&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Notes and Summary of the paper The primary outcome is positive- Is that Good Enough ?</title>
+      <link>/paper/primary-outcome-positive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/paper/primary-outcome-positive/</guid>
+      <description>
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Link to the paper&lt;/strong&gt; &lt;a href=&#34;https://www.nejm.org/doi/full/10.1056/NEJMra1601511&#34; class=&#34;uri&#34;&gt;https://www.nejm.org/doi/full/10.1056/NEJMra1601511&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is often the case that people tend to simplify positive results from a trial as a binary conclusion. However, positive results from primary findings do not guarantee everything done during the course of study was successful and well planned. The authors have presented their arguments saying that determination whether findings provide evidence that is sufficient to modify medical practice requires in depth interpretation of the trial data and the results of earlier related trials. This paper lays out some important questions regarding what we need to think about even if we see positive primary outcome. Usually, the acheivement of statistical signficance for the primary outcome seems to be a prerequisite for the adoption of a new therapy, but it is not sufficient. Authors in this review article have laid out following questions to ask when you see positive primary outcome in your study:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Does a P value of &amp;lt;0.05 provide strong enough evidence?&lt;/li&gt;
+&lt;li&gt;What is the magnitude of the treatment benefit?&lt;/li&gt;
+&lt;li&gt;Is the primary outcome clinically important (and internally consistent)?&lt;/li&gt;
+&lt;li&gt;Are secondary outcomes supportive?&lt;/li&gt;
+&lt;li&gt;Are the principal findings consistent across important subgroups?&lt;/li&gt;
+&lt;li&gt;Is the trial large enough to be convincing?&lt;/li&gt;
+&lt;li&gt;Was the trial stopped early?&lt;/li&gt;
+&lt;li&gt;Do concerns about safety counterbalance positive efficacy?&lt;/li&gt;
+&lt;li&gt;Is the efficacy-safety balance patient-specific?&lt;/li&gt;
+&lt;li&gt;Are there flaws in trial design and conduct?&lt;/li&gt;
+&lt;li&gt;Do the findings apply to my patients?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We will be summarizing and reviewing these questions based on how they are presented in this paper.&lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt;Does a P value of &amp;lt;0.05 provide strong enough evidence ?&lt;/strong&gt; According to the authors, if we are looking for strong enough evidence of efficay in a trial based on p-value criterian of &amp;lt;0.05, smaller pvalue is always better.They argue PARADIAM-HF trial of sacubitrilvalsartan versus enalapril in patients with heart failure showed overwhelming benefit (p&amp;lt;0.00001) with respect to the composite primary outcome cardiovascular death or hospitalization for heart failure which justified in regulatory approval and clinical adoption of this drug. In contrast to this,NXY-059 of SAINT I trial compared with placebo patients for the treatment of ischemic stroke (primary outcome: disability at 90 days) did not provide strong evidence of efficiency with a small pvalue of 0.038. This caused them to conduct a second SAINT II trial that revealed no signficant effect (p value of 0.33). I am assuming when approving or rejecting the adoption of these drugs they also looked at other metrics of drug evaluation like how big is the effect size (clinically meaningful), confidence intervals etc.. besides p-values.&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;What is the magnitude of the treatment effect&lt;/strong&gt; Treatment effect needs to be clinically meaningful (large enough to matter) beyond statistical significance and their determination requires examination of treatment effect on both a relative scale (eg. by calculation of relative risk or hazard ratio) and an absolute scale (eg. by calculation of the differences in the rates of events during follow-up and in the number needed to treat). The extent of uncertainty associated with the effect size should be considered by examining 95% confidence interval. For example, in IMPROVE-IT trial, for ezetimibe compared with placebo in patients with acute coronary syndromes who were being treated with simvastatin, the hazard ratio for the composite primary outcome of cardiovascular death,myocardial infarction, unstable angina, revascularization, or stroke was 0.94 (95% confidence Interval [CI], 0.89 to .98; p=0.016). The 7-year primary event rates were 32.7% with ezetimibe versus 34.7% with placebo (difference of 2% points, CI=around 0 to 4% points). Although findings of the trial were described as positive,small effect size caused to question whether the benefit of ezetimibe is large enough to warrant its cost and potential implications.An advisory panel from FDA recommended against expanding the ezetimibe label to including an indication for a reduction in cardiovascular events.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Is the primary outcome clinically important (and internally consistent)?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;Surrogate points Phase 3 trials are usually powered to achieve clinically relevant, but some diseases use of surrogate primary outcome measure has been accepted. (eg. a reduction in glycated hemoglobin levels as an indication of antiglycemic efficacy in patients with diabetes).Some large scale trials have raised questions regarding the wisdom of such reliance on surrogate markers. In ACCORD trial, intensive therapy resulted in markedly lower glycated hemoglobin levels than standard therapy, but the rate of cardiovascular events was not significantly lower, and mortality was higher. Similarly, in LIDO trial, the approval of the drug levosimendan which resulted in greater hemodynamic improvement (the primary surrogate outcome) than dobutamine patients with acute heart failure was not accepted by FDA. The reason was, SURVIVE, a larger , subsequent trial of levosimendan vs. dobutamine showed no evidence of a treatment benefit for the primary outcome (180 day mortality).&lt;/li&gt;
+&lt;li&gt;Composite outcomes Positive composite outcomes must be carefully inspected to determine which components are driving the result. As an example, in RITA trial,fewer patients in intervention group had composite primary outcome of death,myocardial infarcation or refractory angina than compared to conservative group (9.6% vs. 14.5%, p=0.001)&amp;gt; In fact, the result in the difference was driven by halving of the rate of refractory angina, with no evidence of difference in deaths or myocardial infarction at short term.. Fortunately, a 5 year follow up study showed a 22% lower risk of death or myocardial infarcation with the use of interventional approach vs. conservative approach. This lead to the supported use of early interventional approach in patients with accute coronary syndromes to improve diagnosis. In short,When analysing composite outcome we need to parse out which component seems to be driving majority of the outcome results and approach the analysis accordingly.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Are seconadry outcomes supportive&lt;/strong&gt; Confidence in the overall positive results of primary outcome is enhanced if prespecified secondary outcomes also show treatment benefit. For example, people had doubts about positive primary outcome in SAINT I trial of NXY-059 in acute ischemic stroke as prespecified secondary outcomes- scores on the National institutes of Health Stroke Scale and the Barthel Index showed no evidence of benefit between two treatment groups. Secondary outcomes can be helpful in making sure positive primary outcome results are strong enough to believe.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Are findings consistent across subgroups?&lt;/strong&gt; Relative treatment effects may vary according to patient characteristics. Also,consistent relative treatment effect may be observed across all patient types except for certaing high risk subgroups who may have greater absolute benefits. Sometimes, subgroup analysis identify patients who do not appear to benefit from new treatment despite the primary findings being positive. Subgroup analysis could be showing spurious findings only. However, protecting such patients from ineffective treatment should be considered depending on the strength of statistical interaction and its biologic plausability.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Is the trial large enough to be convincing?&lt;/strong&gt; We need to be cautious about being confident on the positive primary findings obtained from small trials. Due to the lack of enough sample size, small trials lack power to detect the true signals; so, positive treatment effects are susceptible to exaggeration and false positives.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Was the trial stopped early&lt;/strong&gt; Sometimes a trial is stopped early because interim results show strong evidence of treatment superiority, which is often a newsworthy event. Unfortunately, this practice tends to exaggerate treatment efficacy. As trial progresses, the estimated treatment effect varies randomly in relation to the true effect. If the interim estimate is based on randomly high indication of efficacy, it is more likely to cross a stopping boundary and to convince a data and safety monitoring board that overwhelming evidence of benefit exists. Stopping early also truncates eveidence for important secondary (and safety) outcomes.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Do concerns about safety counterbalance positive efficacy?&lt;/strong&gt; When a new treatment has superior efficacy, it is important to identify concerns about safety that might offset the benefits. A balanced account of both efficacy and safety must be provided. Absolute benefits and risks should be presented in terms of differences and percentages. Consideration of number needed to treat for benefit vs. the number needed to harm may provide a guide to net clinical benefit.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Is the balance of efficacy and safety patient specific?&lt;/strong&gt; The net clinical benefit of a new treatment may be patient-specific- that is, worthwhile for those at an increased risk for the primary efficacy outcome but deleterious for those at an increased risk of adverse events.Calculating the individual patient trade-offs between efficacy and safety is not straightforward, and statistical modeling techniques may be useful.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Are there flaws in trial design or conduct?&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

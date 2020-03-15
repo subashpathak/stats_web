@@ -1,0 +1,80 @@
+---
+title: "Notes and Summary of the paper The primary outcome is positive- Is that Good Enough ?"
+author: "Subash Pathak"
+date: "January 10, 2020"
+output: html_document
+---
+
+* **Link to the paper**
+https://www.nejm.org/doi/full/10.1056/NEJMra1601511
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+It is often  the case that people tend to simplify positive results from a trial as a binary conclusion. However, positive results from primary findings do not guarantee everything done during the course of study was successful and well planned. The authors have presented their arguments saying that determination whether findings provide evidence that is sufficient to modify medical practice requires in depth interpretation of the trial data and the results of earlier related trials. This paper lays out some important questions regarding what we need to think about even if we see positive primary outcome. Usually, the acheivement of statistical signficance for the primary outcome seems to be a prerequisite for the adoption of a new therapy, but it is not sufficient. Authors in this review article have laid out following questions to ask when you see positive primary outcome in your study:
+
+1. Does a P value of <0.05 provide strong enough evidence?
+2. What is the magnitude of the treatment benefit?
+3. Is the primary outcome clinically important (and internally consistent)?
+4. Are secondary outcomes supportive?
+5. Are the principal findings consistent across important subgroups?
+6. Is the trial large enough to be convincing?
+7. Was the trial stopped early?
+8. Do concerns about safety counterbalance positive efficacy?
+9. Is the efficacy-safety balance patient-specific?
+10. Are there flaws in trial design and conduct?
+11. Do the findings apply to my patients?
+
+
+We will be summarizing and reviewing these questions based on how they are presented in this paper.
+
+1.**Does a P value of <0.05 provide strong enough evidence ?**
+According to the authors, if we are looking for strong enough evidence of efficay in a trial based on p-value criterian of <0.05, smaller pvalue is always better.They argue PARADIAM-HF trial of sacubitrilvalsartan versus enalapril in patients with heart failure showed overwhelming benefit (p<0.00001) with respect to the composite primary outcome cardiovascular death or hospitalization for heart failure which justified in regulatory approval and clinical adoption of this drug. In contrast to this,NXY-059 of SAINT I trial compared with placebo patients for the treatment of ischemic stroke (primary outcome: disability at 90 days) did not provide strong evidence of efficiency with a small pvalue of 0.038. This caused them to conduct a second SAINT II trial that revealed no signficant effect (p value of 0.33). 
+I am assuming when approving or rejecting the adoption of these drugs they also looked at other metrics of drug evaluation like how big is the effect size (clinically meaningful), confidence intervals etc.. besides p-values.
+
+2. **What is the magnitude of the treatment effect**
+Treatment effect needs to be clinically meaningful (large enough to matter) beyond statistical significance and their determination requires examination of treatment effect on both a relative scale (eg. by calculation of relative risk or hazard ratio) and an absolute scale (eg. by calculation of the differences in the rates of events during follow-up and in the number needed to treat). The extent of uncertainty associated with the effect size should be considered by examining 95% confidence interval.
+For example, in IMPROVE-IT trial, for ezetimibe compared with placebo in patients with acute coronary syndromes who were being treated with simvastatin, the hazard ratio for the composite primary outcome of cardiovascular death,myocardial infarction, unstable angina, revascularization, or stroke was 0.94 (95% confidence Interval [CI], 0.89 to .98; p=0.016). The 7-year primary event rates were 32.7% with ezetimibe versus 34.7% with placebo (difference of 2% points, CI=around 0 to 4% points). Although findings of the trial were described as positive,small effect size caused to question whether the benefit of ezetimibe is large enough to warrant its cost and potential implications.An advisory panel from FDA recommended against expanding the ezetimibe label to including an indication for a reduction in cardiovascular events.
+
+3. **Is the primary outcome clinically important (and internally consistent)?**
+a. Surrogate points
+Phase 3 trials are usually powered to achieve clinically relevant, but some diseases use of surrogate primary outcome measure has been accepted. (eg. a reduction in glycated hemoglobin levels as an indication of antiglycemic efficacy in patients with diabetes).Some large scale trials have raised questions regarding the wisdom of such reliance on surrogate markers. In ACCORD trial, intensive therapy resulted in markedly lower glycated hemoglobin levels than standard therapy, but the rate of cardiovascular events was not significantly lower, and mortality was higher. Similarly, in LIDO trial, the approval of the drug levosimendan which resulted in greater hemodynamic improvement (the primary surrogate outcome) than dobutamine patients with acute heart failure was not accepted by FDA. The reason was, SURVIVE, a larger , subsequent trial of levosimendan vs. dobutamine showed no evidence of a treatment benefit for the primary outcome (180 day mortality).
+b. Composite outcomes
+Positive composite outcomes must be carefully inspected to determine which components are driving the result. As an example, in RITA trial,fewer patients in intervention group had composite primary outcome of death,myocardial infarcation or refractory angina than compared to conservative group (9.6% vs. 14.5%, p=0.001)> In fact, the result in the difference was driven by halving of the rate of refractory angina, with no evidence of difference in deaths or myocardial infarction at short term.. Fortunately, a 5 year follow up study showed a 22% lower risk of death or myocardial infarcation with the use of interventional approach vs. conservative approach. This lead to the supported use of early interventional approach in patients with accute coronary syndromes to improve diagnosis.
+In short,When analysing composite outcome we need to parse out which component seems to be driving majority of the outcome results and approach the analysis accordingly.
+
+4. **Are seconadry outcomes supportive**
+Confidence in the  overall positive results of primary outcome is enhanced if prespecified secondary outcomes also show treatment benefit. For example, people had doubts about positive primary outcome in SAINT I trial of NXY-059 in acute ischemic stroke as prespecified secondary outcomes- scores on the National institutes of Health Stroke Scale and the Barthel Index showed no evidence of benefit between two treatment groups.
+Secondary outcomes can be helpful in making sure positive primary outcome results are strong enough to believe. 
+
+5. **Are findings consistent across subgroups?**
+Relative treatment effects may vary according to patient characteristics. Also,consistent relative treatment effect may be observed across all patient types except for certaing high risk subgroups who may have greater absolute benefits.
+Sometimes, subgroup analysis identify patients who do not appear to benefit from new treatment despite the primary findings being positive. Subgroup analysis could be showing spurious findings only. However, protecting such patients from ineffective treatment should be considered depending on the strength of statistical interaction and its biologic plausability.
+
+6. **Is the trial large enough to be convincing?**
+We need to be cautious about being confident on the positive primary findings obtained from small trials. Due to the lack of enough sample size, small trials lack power to detect the true signals; so, positive treatment effects are susceptible to exaggeration and false positives.
+ 
+7. **Was the trial stopped early**
+Sometimes a trial is stopped early because interim results show strong evidence of treatment superiority, which is often a newsworthy event. Unfortunately, this practice tends to exaggerate treatment efficacy. As trial progresses, the estimated treatment effect varies randomly in relation to the true effect. If the interim estimate is based on randomly high indication of efficacy, it is more likely to cross a stopping boundary and to convince a data and safety monitoring board that overwhelming evidence of benefit exists. Stopping early also truncates eveidence for important secondary (and safety) outcomes.
+
+8. **Do concerns about safety counterbalance positive efficacy?**
+When a new treatment has superior efficacy, it is important to identify concerns about safety that might offset the benefits. A balanced account of both efficacy and safety must be provided. Absolute benefits and risks should be presented in terms of differences and percentages. Consideration of number needed to treat for benefit vs. the number needed to harm may provide a guide to net clinical benefit.
+
+9. **Is the balance of efficacy and safety patient specific?**
+The net clinical benefit of a new treatment may be patient-specific- that is, worthwhile for those at an increased risk for the primary efficacy outcome but deleterious for those at an increased risk of adverse events.Calculating the individual patient trade-offs between efficacy and safety is not straightforward, and statistical modeling techniques may be useful.
+
+10. **Are there flaws in trial design or conduct?**
+
+
+
+
+
+
+
+
+
+
+
+
