@@ -72,6 +72,94 @@
     </item>
     
     <item>
+      <title>Notes and Summary of the paper The primary outcome fails- What next?</title>
+      <link>/paper/primary-outcome-negative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/paper/primary-outcome-negative/</guid>
+      <description>
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Link to the paper&lt;/strong&gt; &lt;a href=&#34;https://www.nejm.org/doi/full/10.1056/NEJMra1510064&#34; class=&#34;uri&#34;&gt;https://www.nejm.org/doi/full/10.1056/NEJMra1510064&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Authors in this paper have made some valuable practical suggestions regarding how we want to look at the results of a trial if its primary outcomes fails to show what we expected. A lot of trials seem to be focused on using statistical significance of p value less than 0.05 as a conclusion of success in the trial. We want to look at the totality of the evidence rather than being focused on statistical significance if we want to evaluate trial results in a practical way. For example, we need to look at the uncertainty surrounding our estimate (effect size) paying attention to confidence interval. Overly simplistic view of p value being greater than 0.05 is a negative result is not an useful strategy to assess trial results. This paper motivates us to ask some important questions after the primary outcome in our clinical trial fails to acheive 5% level of signficance.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is there some indication of potential benefit?&lt;/li&gt;
+&lt;li&gt;Was the trial underpowered?&lt;/li&gt;
+&lt;li&gt;Was the primary outcome appropriate (or accurately defined)?&lt;/li&gt;
+&lt;li&gt;Was the population appropriate?&lt;/li&gt;
+&lt;li&gt;Was the treatment regimen appropriate?&lt;/li&gt;
+&lt;li&gt;Were there deficiencies in trial conduct?&lt;/li&gt;
+&lt;li&gt;Is a claim of noninferiority of value?&lt;/li&gt;
+&lt;li&gt;Do subgroup findings elicit positive signals?&lt;/li&gt;
+&lt;li&gt;Do secondary outcomes reveal positive findings?&lt;/li&gt;
+&lt;li&gt;Can alternative analyses help?&lt;/li&gt;
+&lt;li&gt;Does more positive external evidence exist?&lt;/li&gt;
+&lt;li&gt;Is there a strong biologic rationale that favors the treatment?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Is there some indication of potential benefits?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We need to think carefully when we are inferring the signal of treatment benefit with p values greater than 0.05. In PERFORM trial,there was no significant difference between two arms with respect to the composite primary outcome of Ischemic stroke, MI or other vascular casue of death (HR=1.02, 95% CI=(0.94,1.12)). This trial was stopped early because of futility and no safety advanatges were observed for treatment. It was a negative trial. However,TORCH trial, with pvalue of 0.052 for the primary outcome of death from any cause was received with more constructive interpretation. It showed signficant benefits in treatment arm compared to placebo.&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Was the trial underpowered&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Lack of enough sample size in a study increases the risk that a signficant benefit will not be shown, event if such an effect exists (type 2 error). In trial of bisoprolol vs. placebo with 621 patients HR was 0.8 (9% CI=0.56 to 1.15; p=0.22) with respect to the primary outcome of death from any cause. When they conducted subsequent CIBIS II trial with 2647 patients HR was 066 (95% CI+0.54, 0.81; p&amp;lt;0.0001). In former case, the trial was too small to detect modest treatment effects. A well powered study requires accrual of sufficient number of primary events which can be acheived by recruiting more patients.&lt;/p&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Was the priamry outcome appropriate (accurately defined)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The use composite primary outcome increases the number of primary events but doesn’t necessarily increase statistical power. In PROactive trial, pioglitazone was compared with placebo in patients with type 2 diabetes with respect to primary outcome of death from MI, stroke, acute coronary syndrome, endovascular surgery or leg imputation. With 514 trt events and 572 placebo events, pvalue was 0.08. When the outcome used was death from MI (more conventional outcome), 301 events in trt arm and 358 events in placebo gave p value of 0.03. Thus the addition of extra components merely contributed random noise, thereby diluting a potentially real effect into significance.&lt;/p&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Was the population appropriate&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Another question to ask when get negative outcomes is whether the wrong patient population was studied.Drug Ivabradine did not show any treatment benefits among patients with stable coronary disease in SIGNIFY and BEAUTIFUL trials. However, in SHIFT trial, which involved patients with chronic heart failure, the incidence of the primary outcome, cardiovascular death or hospitalization for heart failure, was 26% lower with ivabradine than with placebo (p&amp;lt;0.0001). Selection of the appropriate population on the basis of mechanistic effects and preliminary studies is essential for pivotal trial success.&lt;/p&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Was the treatment regimen appropriate&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Determination of dosage regimen for a new drug in a pivotal trial can be challenging. Some trials seem to minimize this risk of under-dosing or overdosing regimen by having a three group design that includes two dosage regimesn for the new drug. For example; in PEGASUS-TIMI trial, 60 mg dose of ticagrelor bested both a 90 mg dose and placebo for long-term use beyond 1 year after mypcardial infarction.&lt;/p&gt;
+&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Were there deficiencies in trial conduct&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Adherence to the study protocol is one of the most important factors for the success of a trial. In case of negative outcomes, we need to ask if there were any issues with adherence to the drugs regimens among patients. sometimes, lack of adherence in a certain site might skew the results. This leads to nonsignficant treatment benefits.&lt;/p&gt;
+&lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Is a claim of noninferiority of value&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Can we claim noninferiority after the treatment fails to show superiority? We can claim noninferiority only if the treatment is less invasive or has fewer side effects and noninferiority hypothesis was prespecified in the study protocol.&lt;/p&gt;
+&lt;ol start=&#34;8&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Do subgroups findings elicit positive signals&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Subgroup analysis results can be misleading. We need to consider everybody enrolled in the trial for a reliable analysis.Any positive results obtained using subgroups should not be used to make any kind of inference about the drug. At best, it can be used to generate hypothesis for future experiments.&lt;/p&gt;
+&lt;ol start=&#34;9&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Do secondary outcomes reveal positive findings&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If the primary outcome is negative, positive findings for secondary outcomes are usually considered to be hypothesis-generating. Although regulatory approval of drug based on strong secondary findings are less likely to happen, sometimes they provide compelling enough evidence to affect guidelines and practice.&lt;/p&gt;
+&lt;ol start=&#34;10&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Can alternative analysis help&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Following alternative analysis approach can be helpful in understanding the outcomes better:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Covariate adjusted analysis: Adjusting for baseline covariates strongly related to primary outcome increase precision and statistical power compared to univariate analysis. We always need to prespecify set of covariates in our plan for covariates adjusted model.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;As treated or per-protocol analysis: Analysis conducted based on intention to treat principle should always be the main method for comparing active treatment benefits with respect to placebo in a trial. However, when the trial results go negative based on ITT analysis, arguments are advanced that nonadherence and treatment crossovers may hav masked real treatment effects and that as-treated or per-protocol analyses may get closer to the truth. Unfortunately, use of per-protocol analysis introduces selection bias since we are only looking at subset of patients who adhered and did well in the study. Patients who do not adhere to the treatment regimen and those who cross over to different treatment strategy may have a prognosis that is unrelated to actual treatment. Therefore, such analyses are less likely to influence conclusions regarding treatment efficacy based on ITT principle. However, per-protocol analysis may be considered when examining safety issues.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Analyses of Repeat Events: We lose statistical power and underestimate the benefit of treatment effect by ignoring repeated events that occur subsequently. In studies of chronic diseases such as heart failure, conventional composite outcome analyses concentrate on the time to the first event and ignore any recurrent events. Authors have given an exmple of CHARM trial where ignoring repeated event resulted in underestimating treatment benefit.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;11&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Does more positive external evidence exist&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When we see negative outcome results for an adequately powered trial given preexisting evidence of positive treatment benefit, we need to scrutinize the strength and quality of prior studies. Nonrandomized comparisons and surrogate end points from prior trials are not strong evidence. Evidence from analogous trials and meta-analyses invoving similar types of patients, treatments and outcomes are more valuable. However, favorable findings from meta-analyses should be interpreted cautiously, given the variations across trials in patient selection, the actual treatments studied, and definitions of outcomes and other differences in trial design and conduct. In general, evidence from one large, adequately powered randomized is preferred to that of meta-analysis of smaller studies. Discrepancies between a large trial and a prior meta-analysis warrant further studies to resolve these inconsistencies.&lt;/p&gt;
+&lt;ol start=&#34;12&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Is there a strong biologic rationale that favors the treatment&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We need to be wary of arguments when talking about biologic rationale. Almost all phase 3 trials are likely to have enough supportive scientific evidence from animal studies and early-phase trials. However, we have a lot of phase 3 trials that failed to show any signs of efficiacy regardless success in early phase trials. If methodologic flaws in a trails are not the cause of treatment failure, it is usually time to move on, while trying to understand the biologic reasons for failure.&lt;/p&gt;
+&lt;p&gt;After carefully, assessing above 12 questions when the primary outcomes of our trial appears negeative, authors have suggested to divert their decisons regarding the drug in the following ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Declare that the trial is positive&lt;/li&gt;
+&lt;li&gt;Improve the decision of future trials&lt;/li&gt;
+&lt;li&gt;Abandon the treatment as ineffective&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Notes and Summary of the paper The primary outcome is positive- Is that Good Enough ?</title>
       <link>/paper/primary-outcome-positive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
