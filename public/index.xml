@@ -370,6 +370,38 @@ g&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+      <title>Power and Sample Size</title>
+      <link>/post/power-sample-size/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/power-sample-size/</guid>
+      <description>
+
+
+&lt;p&gt;Technically, power is defined as the probability of obtaining statistically significant results (conventionally pvalue &amp;lt;0.05).Hypothesis test is conducted to gain statistical inferences from a study. For any study, we need to make sure that any null effect we are getting is not due to the fact that there were not enough participants enrolled in the study. In order to do so we need to power it sufficiently enough. In other words,power is a way of making sure we can attribute null result obtained to true null effect with reasonable confidence.&lt;/p&gt;
+&lt;p&gt;For example, we propose a study to find out if there is difference in overall survival between Drug A vs. Drug B when treating breast cancer patients. We calculate power for this study with following assumptions:&lt;/p&gt;
+&lt;p&gt;Alpha (significance level)=0.05&lt;/p&gt;
+&lt;p&gt;Drug A population level mortality rate=10%&lt;/p&gt;
+&lt;p&gt;Drug B population level mortality rate= 5%&lt;/p&gt;
+&lt;p&gt;Then population difference in mortality rate is 5%.&lt;/p&gt;
+&lt;p&gt;And we want to calculate sample size needed to acheive 80% power for this study. What does this mean?&lt;/p&gt;
+&lt;p&gt;5% difference in mortaility rate is the effect at which we power at (above assumption is for our alternative hypothesis). At 5% true population difference in mortality rate, 80% of the trials conducted with sample size of n (which we need to calculate) will be statistically significant at alpha=0.05 level. We can think of power as a vehicle for making sure with reasonable confidence that null effect obtained is true effect not due to sampling variablility or by chance.&lt;/p&gt;
+&lt;p&gt;Here we are performing a hypothesis test comparing proportion of binary outcome variable between two independent populations (Drug A vs. Drug B). In general we can use following forumla to calculate sample size based on the settings of our study.&lt;/p&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}n_i= 2*(((Z_(1-\alpha/2) + (Z_(1-\beta))/ES)^2\end{equation}\]&lt;/span&gt;
+&lt;p&gt;where&lt;/p&gt;
+&lt;p&gt;n(i) = Sample size for each group of drug (i=A,B)&lt;/p&gt;
+&lt;p&gt;Z(1-alpha/2)=Z(0.975)=1.96= the value from the standard normal distribution holding 1- alpha/2 below it&lt;/p&gt;
+&lt;p&gt;Z(1-beta)= the value from the standard normal distribution holding 1- beta below it.&lt;/p&gt;
+&lt;p&gt;ES=Effect size (Population difference between two drugs)= 0.05 (5%) in our example above&lt;/p&gt;
+&lt;p&gt;For 80% power Z(0.80)=0.84 at ES=0.05&lt;/p&gt;
+&lt;p&gt;We get n(i)= 2* (1.96 +0.84/0.05)^2= 704&lt;/p&gt;
+&lt;p&gt;This implies that for this study, sample of size 704 in each arm ensures that a two-sided test with alpha =0.05 has 80% power to detect a 5% difference in the proportion of overall survival among patients treated with Drug A vs. Drug B.&lt;/p&gt;
+&lt;p&gt;If we assume attrition or drop out rate of 10% in each arm, then total samples required for each arm to acheive overall 80% power under the assumption of 5% difference in survival would be:&lt;/p&gt;
+&lt;p&gt;Total enrollment= desired sample size/%retained= 704/0.9 = 782&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: I will be discussing in greater detail all the components in the formula above and their effects in our sample size calculation with simulation study using Shiny App in a later post. Stay tuned.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sampling Distribution of the Sample Mean Clearly Explained</title>
       <link>/post/sampling-dist-sample-mean/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
