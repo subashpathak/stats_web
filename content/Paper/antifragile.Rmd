@@ -1,0 +1,99 @@
+---
+title: "My Notes from the book Antifragile"
+author: "Subash Pathak"
+date: "April 10, 2020"
+output: html_document
+---
+
+##Antifragile: Things that gain from Disorder By Nassim Taleb
+
+**Link to the book**
+https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680
+
+* Anything that has more upside than downside from random events (or certain shocks) is antifragile; the reverse is fragile. Depriving antifragile systems of stressors, randomness and volatility will do more harm than good. Example: Spending a month in bed without any movement will lead to muscle atrophy and other health hazards in our complex body system.
+
+* The rarer the event the less tractable, and the less we know about how frequent its occurence.
+
+* We have the illusion that the world functions because of programmed design, university research, and bureaucratic funding, but there is compelling evidence that its just an illusion- the illusion author call *lecturing birds how to fly*
+
+* Human body is antifragile. Too much regular food is bad for you, and depriving humans of the stressor of hunger may make them live less than their full potential; so all hormesis seems to be doing is reestablishing the natural dosage for food and hunger in humans. In other words, hormesis is the norm anits absence is what hurts us.
+
+* It is said that the best horses lose when they compete with slower ones, and win against better rivals. Undercompensation from the absence of stressor, inverse hormesis, absence of challenge , degrades the best of the best.
+
+* Risk management professional look in the past for information in the worst case scenario, and use it to estimate future risks. But they never notice that so-called worst case event, when it happened, exceeded the worst case at the time.
+
+* The Lucretius problem: The fool believes that the tallest mountain in the world will be equal to the tallest one he has observed.
+
+* When you hear a corporation or debt-laden government trying to reinstill confidence, you know they are fragile, hence doomed.
+
+* Just as in matters of seduction, people lend the most to who need them in the least.
+
+* Causal Opacity: For complex systems, there are many conveyors of information around us than meet the eye. It is hard to see the arrow from cause to consequence, making much of conventional methods of analysis, in addition to standard logic, inapplicable. Because of nonlinearites, one needs higher visibility than with regular systems.
+
+* Taleb's message to enterpreneurs: Most of you will fail, disrepected, impoverished, but we are grateful for the risks you are taking and the sacrifices you are making for the sake of the economic growth of the planet and pulling others out of poverty. You are at the source of antifragility. Our nation thanks you.
+
+* For a self-employed person, a small (nonterminal) mistake is information, valuable information, one that directs him in his adaptive approach; for someone employed in an office setting, a mistake is something that goes into his permanent record, filed in the personnel department. So, we want to avoid even small mistakes in office settings when working for somebody. This avoidance of small mistakes makes the large ones more severe.
+
+* The Great Turkey Problem: A turkey is fed for a thousand days by a butcher; every day confirms to its staff of analysts that butchers love turkeys "With increased statistical confidence". The butcher will keep feeding the turkey until a few days before thanksgiving. Then comes that day when it is really not a good idea to be a turkey. So with butcher surprising it, the turkey will have a revision of belief- right when its confidence in the statement that the **the butcher loves turkeys** is maximal and "it is very quiet" and soothingly predictable in the life of the turkey. The key here is that such a surprise will be a black swan event (rare unpredictable event); but for the turkey, not for the butcher.
+
+* This turkey problem tends to prevail in intellectual circles and has a strong ground in social sciences. Mistaking absence of evidence (of harm) for evidence of absence.
+
+* We need to learn to think in second steps, chains of consequences and side effects.
+
+* One of life's packages: no stability without volatility.
+
+* Iatrogenics: Harm done by the healer, as when doctor's interventions do more harm than good.
+
+* When constrained systems, those hungry for natural disorder, collapse, as they are eventually bound to, since they are fragile, failure is never seen as the result of fragility. Rather, such failure is interpreted as a product of poor forecasting. As with a crumbling sand pile, it would be unintelligent to attribute the collapse of a fragile bridge to the last truck that crossed it, and even more foolish to try to predict in advance which truck might bring it down.
+
+* Humans will never be able to turn politics and economics into the tractable randomness of blackjack.
+
+* Not seeing a tsunami or an economic event coming is excusable; building something fragile to them is not.
+
+* Focus on getting out of Black swan domain (fourth Quadrant), the one in which we have high exposure to rare "tail" events and these events are incomputable.
+
+* Fragility implies more to lose than to gain, equals more downside than upside, equals unfavorable asymmetry. Antifragility implies more to gain than to lose, equals more upside than downside, equals favorable symmetry.
+
+* Ray Dalio has a rule for someone making speculative bets: "Make sure that the probability of unacceptable (risk of ruin) is nil"
+
+* Stoicism is the domestication, not the elimination, of emotions, so is the barbell a domestication, not the elimination of uncertainty.
+
+* We are managed by small (or large) accidental changes, more accidental than we admit.
+
+* Resisting new technology is not necessarily irrational; waiting for time to operate its testing might be a valid approach if one holds that we have an incomplete picture of things.
+
+* Green lumber fallacy: The situation in which one mistakes a source of necessary knowledge- the greennes of lumber- for another less visible from the outside, less tractable, less narratable.
+
+* Strip things to their simplest possible model. The more the studies, the less obvious elementary but fundamental things become
+
+* It is just that the things that are implemented tend to want to be born from practice, not theory.
+
+* There is such a thing as nonnerdy applied mathematics: find a problem first, and figure out the math that works for it (just as one acquires language), rather than study in a vacuum through theorems and artificial examples.
+
+* What is not intelligible to me is not necessarily unintelligent- Nietzsche
+
+* If you throw cat or a mouse from an elevation of several times their height, they will typically manage to survive. Elephants, by comparison break limbs very easily.
+
+* Bergson's razor: a philosopher should be known for one single idea, not more.
+
+* If you see fraud and don't say fraud, you are a fraud
+
+* An academic is not designed to remember his opinions because he doesn't have any risk from them.
+
+* Never ask anyone for their opinions, forecast, or recommendation. Just ask them what they have- or don't have- in their portfolio.
+
+* The definition of the free man, according to Aristotle, is one who is free with his opinions- as a side effects of being free with his time.
+
+* The tragedy of Big data: The more variables, the more correlations that can show signficance in the hands of a skilled researcher. Falsity grows faster than information; it is nonlinear with respect to data.
+
+* People fit their beliefs to actions rather than fit their actions to their beliefs.
+
+* The best way to verify that you are alive is by checking if you like variations.
+
+
+
+
+
+
+
+
