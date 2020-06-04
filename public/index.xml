@@ -173,6 +173,111 @@ g&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+      <title>dplyr package basics</title>
+      <link>/programming/dplyr-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/programming/dplyr-basics/</guid>
+      <description>
+
+
+&lt;div id=&#34;dplyr-basics-with-examples&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;dplyr basics with examples&lt;/h1&gt;
+&lt;p&gt;dplyr is one of the commonly used packages in R for data manipulation.Following are major verbs used in dplyr for data curation and analysis:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;filter()&lt;/li&gt;
+&lt;li&gt;select()&lt;/li&gt;
+&lt;li&gt;summarize()&lt;/li&gt;
+&lt;li&gt;arrange()&lt;/li&gt;
+&lt;li&gt;mutate()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will look at use cases for these verbs with a simulated data:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#set libraries
+
+library(dplyr)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;dplyr&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     filter, lag&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:base&amp;#39;:
+## 
+##     intersect, setdiff, setequal, union&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Simulate dataset with random normal distribution 
+set.seed(1234)  #set seed so that results don&amp;#39;t change for future rerun
+
+#Generate two vectors with  random normal distribution
+x&amp;lt;- rnorm(n=10, sd=2, mean=25)
+y&amp;lt;- rnorm(n=10, sd=3, mean=30)
+
+#Combine both simulated vectors to create a data frame
+our_data&amp;lt;- data.frame(x,y)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now lets use above mentioned verbs to see how they can be used in data processing.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#filter chooses rows from the columns;
+#we want to subset data only to those observations whose x is greater than 25
+
+filter(our_data, x &amp;gt; 25)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##          x        y
+## 1 25.55486 27.00484
+## 2 27.16888 27.67124
+## 3 25.85825 32.87848
+## 4 26.01211 29.66914&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#select chooses columns from our data; 
+#we want keep only x as our column in the dataset
+
+select(our_data, x)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##           x
+## 1  22.58587
+## 2  25.55486
+## 3  27.16888
+## 4  20.30860
+## 5  25.85825
+## 6  26.01211
+## 7  23.85052
+## 8  23.90674
+## 9  23.87110
+## 10 23.21992&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#summarise creates stats summary of the variable in the dataset and collapses to a single row; 
+#here we are calculating mean of x
+
+summarise(our_data, x=mean(x))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##          x
+## 1 24.23369&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#arrange sorts variable by ascending or descending order; 
+#here we are sorting x by descending order
+
+arrange(our_data, desc(x))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##           x        y
+## 1  27.16888 27.67124
+## 2  26.01211 29.66914
+## 3  25.85825 32.87848
+## 4  25.55486 27.00484
+## 5  23.90674 27.26641
+## 6  23.87110 27.48848
+## 7  23.85052 28.46697
+## 8  23.21992 37.24751
+## 9  22.58587 28.56842
+## 10 20.30860 30.19338&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#mutate creates a new variable; 
+#here we are creating a new variable x_twice multiplying x by 2
+
+mutate(our_data, x_twice=2*x)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##           x        y  x_twice
+## 1  22.58587 28.56842 45.17174
+## 2  25.55486 27.00484 51.10972
+## 3  27.16888 27.67124 54.33776
+## 4  20.30860 30.19338 40.61721
+## 5  25.85825 32.87848 51.71650
+## 6  26.01211 29.66914 52.02422
+## 7  23.85052 28.46697 47.70104
+## 8  23.90674 27.26641 47.81347
+## 9  23.87110 27.48848 47.74219
+## 10 23.21992 37.24751 46.43985&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I showed here only few basics of dplyr to get you started quickly. For more detailed information on this package, go to this link: &lt;a href=&#34;https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Inappropriate use of Bivariable analysis to screen risk factors for use in Multivariable analysis</title>
       <link>/paper/bvs_method_paper_summary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

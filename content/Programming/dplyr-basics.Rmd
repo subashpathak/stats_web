@@ -1,0 +1,86 @@
+---
+title: "dplyr package basics"
+author: "Subash Pathak"
+date: "June 3rd, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#dplyr basics with examples
+
+dplyr is one of the commonly used packages in R for data manipulation.Following are major verbs used in dplyr for data curation and analysis:
+
+* filter()
+* select()
+* summarize()
+* arrange()
+* mutate()
+
+We will look at use cases for these verbs with a simulated data:
+
+
+
+```{r lib, echo=TRUE}
+#set libraries
+
+library(dplyr)
+
+#Simulate dataset with random normal distribution 
+set.seed(1234)  #set seed so that results don't change for future rerun
+
+#Generate two vectors with  random normal distribution
+x<- rnorm(n=10, sd=2, mean=25)
+y<- rnorm(n=10, sd=3, mean=30)
+
+#Combine both simulated vectors to create a data frame
+our_data<- data.frame(x,y)
+
+```
+
+
+Now lets use above mentioned verbs to see how they can be used in data processing.
+
+```{r filter, echo=TRUE}
+#filter chooses rows from the columns;
+#we want to subset data only to those observations whose x is greater than 25
+
+filter(our_data, x > 25)
+```
+
+```{r select, echo=TRUE}
+#select chooses columns from our data; 
+#we want keep only x as our column in the dataset
+
+select(our_data, x)
+```
+
+
+```{r summarise, echo=TRUE}
+#summarise creates stats summary of the variable in the dataset and collapses to a single row; 
+#here we are calculating mean of x
+
+summarise(our_data, x=mean(x))
+```
+
+```{r arrange, echo=TRUE}
+#arrange sorts variable by ascending or descending order; 
+#here we are sorting x by descending order
+
+arrange(our_data, desc(x))
+```
+
+
+```{r mutate, echo=TRUE}
+#mutate creates a new variable; 
+#here we are creating a new variable x_twice multiplying x by 2
+
+mutate(our_data, x_twice=2*x)
+```
+
+
+I showed here only few basics of dplyr to get you started quickly. For more detailed information on this package, go to this link: 
+https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html
+

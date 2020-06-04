@@ -1,0 +1,103 @@
+---
+title: "dplyr package basics"
+author: "Subash Pathak"
+date: "June 3rd, 2020"
+output: html_document
+---
+
+
+
+<div id="dplyr-basics-with-examples" class="section level1">
+<h1>dplyr basics with examples</h1>
+<p>dplyr is one of the commonly used packages in R for data manipulation.Following are major verbs used in dplyr for data curation and analysis:</p>
+<ul>
+<li>filter()</li>
+<li>select()</li>
+<li>summarize()</li>
+<li>arrange()</li>
+<li>mutate()</li>
+</ul>
+<p>We will look at use cases for these verbs with a simulated data:</p>
+<pre class="r"><code>#set libraries
+
+library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>#Simulate dataset with random normal distribution 
+set.seed(1234)  #set seed so that results don&#39;t change for future rerun
+
+#Generate two vectors with  random normal distribution
+x&lt;- rnorm(n=10, sd=2, mean=25)
+y&lt;- rnorm(n=10, sd=3, mean=30)
+
+#Combine both simulated vectors to create a data frame
+our_data&lt;- data.frame(x,y)</code></pre>
+<p>Now lets use above mentioned verbs to see how they can be used in data processing.</p>
+<pre class="r"><code>#filter chooses rows from the columns;
+#we want to subset data only to those observations whose x is greater than 25
+
+filter(our_data, x &gt; 25)</code></pre>
+<pre><code>##          x        y
+## 1 25.55486 27.00484
+## 2 27.16888 27.67124
+## 3 25.85825 32.87848
+## 4 26.01211 29.66914</code></pre>
+<pre class="r"><code>#select chooses columns from our data; 
+#we want keep only x as our column in the dataset
+
+select(our_data, x)</code></pre>
+<pre><code>##           x
+## 1  22.58587
+## 2  25.55486
+## 3  27.16888
+## 4  20.30860
+## 5  25.85825
+## 6  26.01211
+## 7  23.85052
+## 8  23.90674
+## 9  23.87110
+## 10 23.21992</code></pre>
+<pre class="r"><code>#summarise creates stats summary of the variable in the dataset and collapses to a single row; 
+#here we are calculating mean of x
+
+summarise(our_data, x=mean(x))</code></pre>
+<pre><code>##          x
+## 1 24.23369</code></pre>
+<pre class="r"><code>#arrange sorts variable by ascending or descending order; 
+#here we are sorting x by descending order
+
+arrange(our_data, desc(x))</code></pre>
+<pre><code>##           x        y
+## 1  27.16888 27.67124
+## 2  26.01211 29.66914
+## 3  25.85825 32.87848
+## 4  25.55486 27.00484
+## 5  23.90674 27.26641
+## 6  23.87110 27.48848
+## 7  23.85052 28.46697
+## 8  23.21992 37.24751
+## 9  22.58587 28.56842
+## 10 20.30860 30.19338</code></pre>
+<pre class="r"><code>#mutate creates a new variable; 
+#here we are creating a new variable x_twice multiplying x by 2
+
+mutate(our_data, x_twice=2*x)</code></pre>
+<pre><code>##           x        y  x_twice
+## 1  22.58587 28.56842 45.17174
+## 2  25.55486 27.00484 51.10972
+## 3  27.16888 27.67124 54.33776
+## 4  20.30860 30.19338 40.61721
+## 5  25.85825 32.87848 51.71650
+## 6  26.01211 29.66914 52.02422
+## 7  23.85052 28.46697 47.70104
+## 8  23.90674 27.26641 47.81347
+## 9  23.87110 27.48848 47.74219
+## 10 23.21992 37.24751 46.43985</code></pre>
+<p>I showed here only few basics of dplyr to get you started quickly. For more detailed information on this package, go to this link: <a href="https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html" class="uri">https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html</a></p>
+</div>
