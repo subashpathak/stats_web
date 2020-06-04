@@ -42,10 +42,6 @@
   </url>
   
   <url>
-    <loc>/programming/dplyr-basics/</loc>
-  </url>
-  
-  <url>
     <loc>/paper/bvs_method_paper_summary/</loc>
   </url>
   
@@ -83,6 +79,10 @@
   
   <url>
     <loc>/publication_types/</loc>
+  </url>
+  
+  <url>
+    <loc>/programming/dplyr-basics/</loc>
   </url>
   
   <url>

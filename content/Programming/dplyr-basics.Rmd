@@ -1,5 +1,5 @@
 ---
-title: "dplyr package basics"
+title: "R Programming: dplyr package basics"
 author: "Subash Pathak"
 date: "June 3rd, 2020"
 output: html_document
@@ -9,7 +9,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#dplyr basics with examples
 
 dplyr is one of the commonly used packages in R for data manipulation.Following are major verbs used in dplyr for data curation and analysis:
 
